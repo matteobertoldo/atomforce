@@ -48,4 +48,4 @@ A final example of how the file should be structured. **Important note**: rememb
 
 ## License
 
-Atomforce is licensed under the MIT License - see the [LICENSE.md](https://github.com/matteobertoldo/atomforce/LICENSE.md) file for details.
+Atomforce is licensed under the MIT License - see the [LICENSE.md](https://github.com/matteobertoldo/atomforce/blob/master/LICENSE.md) file for details.
