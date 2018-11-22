@@ -1,0 +1,23 @@
+{
+    "menu": [{
+        "label": "Packages",
+        "submenu": [{
+            "label": "Atomforce",
+            "submenu": [{
+                "label": "Enable Status Bar",
+                "command": "atomforce:attach"
+            },{
+                "label": "Enable Watch Files",
+                "command": "atomforce:watch"
+            },
+            {
+                "label": "Disable Watch Files",
+                "command": "atomforce:disable"
+            },
+            {
+                "label": "Upload All Cartridges",
+                "command": "atomforce:deploy"
+            }]
+        }]
+    }]
+}
