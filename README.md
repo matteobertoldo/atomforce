@@ -40,9 +40,8 @@ A final example of how the file should be structured. **Important note**: rememb
 {
     "hostname": "dev01-eu01-sample.demandware.net",
     "username": "username",
-    "password": "******",
-    "version": "version1",
-    "root": "."
+    "password": "mypassword",
+    "version": "version1"
 }
 ```
 
