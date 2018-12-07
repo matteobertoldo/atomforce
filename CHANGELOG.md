@@ -8,3 +8,8 @@
     -   **An ignored list array** configurable in the `Settings View`
     -   Ability to remain in watch or not in the **Symlinks** files and folders.
 *   In future when [Atom Filesystem Watcher](https://github.com/atom/watcher) will be completely stable and the API will be similar to chokidar it will be possible enable events via Atom Filesystem Watcher. Currently chokidar creates a rebuid error in `macOS`.
+
+## 0.3.0 - Authentication for Sandbox
+
+*   Added authentication for the Sandbox (`DWDAV`) with return of the hostname in the status bar tooltip.
+*   Modal addition of error in case of non authorization and disabling of events on files.
