@@ -13,3 +13,8 @@
 
 *   Added authentication for the Sandbox (`DWDAV`) with return of the hostname in the status bar tooltip.
 *   Modal addition of error in case of non authorization and disabling of events on files.
+
+## 0.3.5 - Disable Watcher
+
+*   Fixed a bug that created multiple filesyster watchers even if you tried to completely disable the package via settings view.
+*   Now, if the filesystem watcher is initially activated and the user attempts to disable Atomforce, it is immediately closed and prevents the user from making changes to the files and consequently they are not uploaded to the Sandbox.

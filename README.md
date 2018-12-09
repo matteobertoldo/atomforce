@@ -35,7 +35,7 @@ Atomforce requires a file called `dw.json` in the `root` of your project, which 
 | `version` | `true` | `string` | The version of the code active in your Sandbox. You can check the version in `Administration > Site Development > Code Deployment`. |
 | `root` | `false` | `string` | Root option allows for path resolution of the file to upload *relative* to a directory. |
 | `p12` | `false` | `string` | The path of `p12` file necessary for two-factor authentication. |
-| `passphrase` | `true` <br /> (if `p12` is set)  | `string` | The keyword necessary for two-factor authentication. |
+| `passphrase` | `false` | `string` | The keyword necessary for two-factor authentication. If `p12` is set, `passphrase` become **mandatory**. |
 
 A final example of how the file should be structured. **Important note**: remember to ignore the file in your `.gitignore` to avoid committing your Sandbox credentials!.
 
