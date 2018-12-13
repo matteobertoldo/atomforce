@@ -1,7 +1,7 @@
 # Atomforce
 
 Salesforce Commerce Cloud (ex Demandware) uploader for Atom. Upload your files and cartridges on SFCC via WebDAV. <br />
-Atomforce is a package for Atom that with a simple interface in the Status Bar that helps you upload files and cartridges in your Sandbox.
+Atomforce is a package for Atom, that with a simple interface in the Status Bar, helps you upload files and cartridges in your Sandbox.
 
 ## Installation (Soon)
 
@@ -34,6 +34,7 @@ Atomforce requires a file called `dw.json` in the `root` of your project, which 
 | `password` | `true` | `string` | The password used to access on your Sandbox. |
 | `version` | `true` | `string` | The version of the code active in your Sandbox. You can check the version in `Administration > Site Development > Code Deployment`. |
 | `root` | `false` | `string` | Root option allows for path resolution of the file to upload *relative* to a directory. |
+| `cartridges` | `false` | `string` or `array` | List of cartridges to be uploaded and viewed by the watcher filesystem. |
 | `p12` | `false` | `string` | The path of `p12` file necessary for two-factor authentication. |
 | `passphrase` | `false` | `string` | The keyword necessary for two-factor authentication. If `p12` is set, `passphrase` become **mandatory**. |
 
@@ -64,9 +65,53 @@ The `p12` key can be added to the `dw.json` file and the absolute path of where 
 }
 ```
 
+### Root
+
+Root option allows for path resolution of the file to upload *relative* to a directory on WebDAV. <br />
+To better understand this option, suppose we have the following structure.
+
+```
+cartridges/
+├── app_storefront_base/
+├── plugin_ups/
+├── plugin_wishlist/
+└── README.md
+```
+In this structure in the WebDAV the `cartridges` folder will also be uploaded, to avoid this, just insert the initial path in the value of `root`, where the cartridges are allocated.
+
+```json
+{
+    "hostname": "dev01-eu01-sample.demandware.net",
+    "username": "username",
+    "password": "mypassword",
+    "version": "version1",
+    "root": "cartridges"
+}
+```
+
+If the value of `root` is: `.` the full path will be considered, so the `cartridges` folder will also be uploaded in the WebDAV. If the path of your cartridges is on several levels: `cartridges/src` just indicate the complete path. Final slash is not required.
+
+### Cartridges List
+
+The cartridges option allows you to stay in watch on one or more cartridges and upload these accordingly in WebDAV. If this option is not defined in the `dw.json` file, the watcher filesystem will listen all event (add, change and delete) to all files and folders in the project root or path indicated in the `root` option. And all files and folders will be uploaded.
+
+```json
+{
+    "hostname": "dev01-eu01-sample.demandware.net",
+    "username": "username",
+    "password": "mypassword",
+    "version": "version1",
+    "root": "cartridges",
+    "cartridges": ["cartridges/app_storefront_base", "cartridges/plugin_ups"]
+}
+```
+
+The cartridges option can also be referred to as a string: `"cartridges": "cartridges"`. <br />
+In this case the watcher filesystem will listen in all the folders inside the `cartridges` path. Final slash is not required.
+
 ## Additionals Packages
 
-To improve the development workflow in Salesforce Commerce Colud we recommend installing the `ISML` syntax.
+To improve the development workflow in Salesforce Commerce Colud we recommend installing the `.isml` & `.ds` syntax.
 
 -   [language-demandware](https://atom.io/packages/language-demandware)
 
