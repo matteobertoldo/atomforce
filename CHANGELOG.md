@@ -16,5 +16,12 @@
 
 ## 0.3.5 - Disable Watcher
 
-*   Fixed a bug that created multiple filesyster watchers even if you tried to completely disable the package via settings view.
+*   Fixed a bug that created multiple filesystem watchers even if you tried to completely disable the package via settings view.
 *   Now, if the filesystem watcher is initially activated and the user attempts to disable Atomforce, it is immediately closed and prevents the user from making changes to the files and consequently they are not uploaded to the Sandbox.
+
+## 0.4.0 - Put/Delete on WebDAV
+
+*   Added *put* & *delete* methods for upload file on WebDAV. Currently uploading file is reported as `console.log` in the Developer Tools.
+*   Added new `boolean` configuration that allows to display a `cosole.log` of all file events (addition, modification or deletion).
+*   Now in the `dw.json` file in the `cartridges` key you can insert arrays or strings.
+*   Added `root` option in `dw.json` file.
