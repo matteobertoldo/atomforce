@@ -6,17 +6,22 @@
             "submenu": [{
                 "label": "Enable Status Bar",
                 "command": "atomforce:attach"
-            },{
+            },
+            {
                 "label": "Enable Watch Files",
                 "command": "atomforce:watch"
             },
             {
                 "label": "Disable Watch Files",
-                "command": "atomforce:disable"
+                "command": "atomforce:disablewatch"
             },
             {
                 "label": "Upload All Cartridges",
                 "command": "atomforce:deploy"
+            },
+            {
+                "label": "Toggle Atomforce Tab",
+                "command": "atomforce-tab:toggle"
             }]
         }]
     }]
