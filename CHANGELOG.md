@@ -25,3 +25,8 @@
 *   Added new `boolean` configuration that allows to display a `cosole.log` of all file events (addition, modification or deletion).
 *   Now in the `dw.json` file in the `cartridges` key you can insert arrays or strings.
 *   Added `root` option in `dw.json` file.
+
+## 0.5.0 - Added activation commands for enable/disable watch files
+
+*   Added two new activation commands to enable or disable the watcher filesystem: `atomforce:watch`, `atomforce:disablewatch`.
+*   New color management of the status bar

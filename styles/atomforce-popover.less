@@ -22,7 +22,7 @@
         background-color: @tool-panel-background-color;
         color: @text-color;
         border: 1px solid @base-border-color;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px hsla(0, 0, 0, 0.1);
         padding: 0;
         white-space: normal;
         overflow-y: auto;
@@ -62,7 +62,7 @@
         border-radius: @component-border-radius;
         margin-left: -0.156rem;
         padding: 1px 4px;
-        transition: background-color 0.85s cubic-bezier(0.2, 1, 0.3, 1), color 0.85s cubic-bezier(0.2, 1, 0.3, 1);
+        transition: background-color 0.85s var(--cb-curve), color 0.85s var(--cb-curve);
     }
 
     .input-toggle {
