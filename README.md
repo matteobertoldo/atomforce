@@ -1,5 +1,7 @@
 # Atomforce
 
+[![Build Status](https://travis-ci.com/matteobertoldo/atomforce.svg?branch=master)](https://travis-ci.com/matteobertoldo/atomforce)
+
 Salesforce Commerce Cloud (ex Demandware) uploader for Atom. Upload your files and cartridges on SFCC via WebDAV. <br />
 Atomforce is a package for Atom, that with a simple interface in the Status Bar, helps you upload files and cartridges in your Sandbox.
 
