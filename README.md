@@ -38,7 +38,8 @@ Atomforce requires a file called `dw.json` in the `root` of your project, which 
 | `p12` | `false` | `string` | The path of `p12` file necessary for two-factor authentication. |
 | `passphrase` | `false` | `string` | The keyword necessary for two-factor authentication. If `p12` is set, `passphrase` become **mandatory**. |
 
-A final example of how the file should be structured. **Important note**: remember to ignore the file in your `.gitignore` to avoid committing your Sandbox credentials!.
+A final example of how the file should be structured. <br />
+> *Remember to add the `dw.json` file in your `.gitignore` to avoid committing your Sandbox credentials!*.
 
 ```json
 {
@@ -52,17 +53,23 @@ A final example of how the file should be structured. **Important note**: rememb
 ### 2FA (Two-factor Authentication)
 
 Atomforce supports **2FA** (Two-factor Authentication). <br />
-The `p12` key can be added to the `dw.json` file and the absolute path of where the `p12file` is allocated as the value. The `passphrase` key is also required, where the keyword required for authentication is indicated as the value.
+The `p12` key can be added to the `dw.json` file, and the path of where the `p12` certificate file is allocated as the value. The `passphrase` key is also required, where the keyword required for authentication is indicated as the value.
 
 ```json
 {
-    "hostname": "dev01-eu01-sample.demandware.net",
+    "hostname": "cert.staging.eu01.sample.demandware.net",
     "username": "username",
     "password": "mypassword",
     "version": "version1",
-    "p12": "path/to/file.p12",
+    "p12": "absolutepath/to/certificate.p12",
     "passphrase": "keyword"
 }
+```
+
+The `p12` certificate can be built using:
+
+```bash
+openssl pkcs12 -export -in cert.staging.eu01.sample.demandware.net_01.crt -inkey cert.staging.eu01.sample.demandware.net_01.key -out certificate.p12
 ```
 
 ### Root
@@ -93,7 +100,7 @@ If the value of `root` is: `.` the full path will be considered, so the `cartrid
 
 ### Cartridges List
 
-The cartridges option allows you to stay in watch on one or more cartridges and upload these accordingly in WebDAV. If this option is not defined in the `dw.json` file, the watcher filesystem will listen all event (add, change and delete) to all files and folders in the project root or path indicated in the `root` option. And all files and folders will be uploaded.
+The cartridges option allows you to stay in watch on one or more cartridges and upload these accordingly in WebDAV. If this option is not defined in the `dw.json` file, the watcher filesystem will listen all event (add, change and delete) to all files and folders in the project root or path indicated in the `root` option, and all files and folders will be uploaded.
 
 ```json
 {
@@ -102,12 +109,12 @@ The cartridges option allows you to stay in watch on one or more cartridges and 
     "password": "mypassword",
     "version": "version1",
     "root": "cartridges",
-    "cartridges": ["cartridges/app_storefront_base", "cartridges/plugin_ups"]
+    "cartridges": ["app_storefront_base", "plugin_ups"]
 }
 ```
 
-The cartridges option can also be referred to as a string: `"cartridges": "cartridges"`. <br />
-In this case the watcher filesystem will listen in all the folders inside the `cartridges` path. Final slash is not required.
+The cartridges option can also be referred to as a string. Ex: `"cartridges": "app_storefront_base"`. <br />
+In that case the watcher filesystem will listen in all the folders inside the `string` path defined in the `cartridges` key. Final slash is not required.
 
 ## Additionals Packages
 

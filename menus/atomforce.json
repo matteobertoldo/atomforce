@@ -17,11 +17,11 @@
             },
             {
                 "label": "Upload All Cartridges",
-                "command": "atomforce:deploy"
+                "command": "atomforce:cartridges"
             },
             {
                 "label": "Toggle Atomforce Tab",
-                "command": "atomforce-tab:toggle"
+                "command": "atomforce:toggletab"
             }]
         }]
     }]
