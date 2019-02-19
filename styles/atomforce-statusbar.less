@@ -1,6 +1,10 @@
 .status-bar {
     .atomforce-status-bar {
         .icon {
+            display: inline-block;
+            min-width: 16px;
+            text-align: center;
+
             &::before {
                 margin-right: 0;
             }
@@ -13,9 +17,8 @@
         }
 
         &.uploading {
-            .icon {
-                color: @text-color-warning;
-                transition: color 0.3s ease;
+            .icon::before {
+                animation: statusbar-up 0.8s ease-out infinite, statusbar-fade 0.8s ease-out infinite;
             }
         }
 

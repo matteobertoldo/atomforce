@@ -1,7 +1,7 @@
 {
   "name": "atomforce",
   "main": "./lib/atomforce",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Salesforce Commerce Cloud (ex Demandware) uploader for Atom. Upload your files and cartridges on SFCC via WebDAV.",
   "keywords": [
     "atom",
@@ -34,19 +34,24 @@
   },
   "activationCommands": {},
   "devDependencies": {
-    "eslint": "^5.11.0",
+    "eslint": "^5.14.1",
     "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.9.0",
-    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
-    "stylelint": "^9.9.0",
+    "stylelint": "^9.10.1",
     "stylelint-config-standard": "^18.2.0"
   },
   "dependencies": {
-    "chokidar": "^2.0.4",
+    "chokidar": "^2.1.2",
+    "del": "^3.0.0",
     "etch": "^0.14.0",
     "lodash": "^4.17.11",
-    "request": "^2.88.0"
+    "multimatch": "^3.0.0",
+    "p-queue": "^3.0.0",
+    "request": "^2.88.0",
+    "walk": "^2.3.14",
+    "yazl": "^2.5.1"
   }
 }
