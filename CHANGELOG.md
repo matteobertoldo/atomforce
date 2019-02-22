@@ -1,3 +1,14 @@
+## 0.7.0 - 2019-02-22
+### Added
+-   New tab for showing file and cartridges uploaded on WebDAV.
+
+### Changed
+-   Modified the folder tree and create folders for component types.
+
+### Fixed
+-   Fixed a watch state bug in the switcher label after authentication in WebDAV and starting the cartridges task.
+-   Fixed a bug that did not allow the watcher filesystem to be properly enabled/disabled via the Atomforce menu command, after the WebDAV authorization failed.
+
 ## 0.6.0 - 2019-02-19
 ### Added
 -   New command "Upload All Cartridges" on menu.
@@ -12,7 +23,7 @@
 -   Changed the checked status in the Atomforce status bar to `false`, when user failed the authentication on WebDAV.
 
 ### Fixed
--   Fixed a random Atom crash if you trying to quickly enable the file system watcher.
+-   Fixed a random Atom crash if you trying to quickly enable the filesystem watcher.
 
 ## 0.5.0 - 2018-12-24
 ### Added
@@ -46,5 +57,5 @@
 
 ## 0.1.0 - 2018-11-22
 ### Added
--   Welcome Atomforce!
+-   Welcome **Atomforce**!
 -   Atomforce can now intercept if the `dw.json` file exists in the project root, validate the file with the keys and values required for the connection and check if there is only one project connected.

@@ -4,6 +4,10 @@
         "submenu": [{
             "label": "Atomforce",
             "submenu": [{
+                "label": "Toggle Atomforce Tab",
+                "command": "atomforce:toggletab"
+            },
+            {
                 "label": "Enable Status Bar",
                 "command": "atomforce:attach"
             },
@@ -18,10 +22,6 @@
             {
                 "label": "Upload All Cartridges",
                 "command": "atomforce:cartridges"
-            },
-            {
-                "label": "Toggle Atomforce Tab",
-                "command": "atomforce:toggletab"
             }]
         }]
     }]
