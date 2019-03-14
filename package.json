@@ -34,7 +34,7 @@
   },
   "activationCommands": {},
   "devDependencies": {
-    "eslint": "^5.14.1",
+    "eslint": "^5.15.1",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-node": "^8.0.1",
@@ -49,12 +49,13 @@
     "etch": "^0.14.0",
     "lodash": "^4.17.11",
     "multimatch": "^3.0.0",
-    "p-queue": "^3.1.0",
+    "p-queue": "^3.2.0",
     "request": "^2.88.0",
     "walk": "^2.3.14",
     "yazl": "^2.5.1"
   },
   "scripts": {
-    "lint": "eslint ."
+    "eslint": "eslint .",
+    "stylelint": "stylelint ./styles"
   }
 }

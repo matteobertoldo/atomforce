@@ -1,9 +1,8 @@
 # Atomforce
 
-[![Build Status](https://travis-ci.com/matteobertoldo/atomforce.svg?branch=master)](https://travis-ci.com/matteobertoldo/atomforce)
+[![Build Status](https://travis-ci.com/matteobertoldo/atomforce.svg?branch=master)](https://travis-ci.com/matteobertoldo/atomforce) [![Code Style: Prettier](https://img.shields.io/badge/code_style-prettier-2f8ed9.svg)](https://github.com/prettier/prettier)
 
-Salesforce Commerce Cloud (ex Demandware) uploader for Atom. Upload your files and cartridges on SFCC via WebDAV. <br />
-Atomforce is a package for Atom, that with a simple interface in the Status Bar, helps you upload files and cartridges in your Sandbox.
+Salesforce Commerce Cloud (ex Demandware) uploader for Atom. Upload your files and cartridges on SFCC via WebDAV. <br /> Atomforce is a package for Atom, that with a simple interface in the Status Bar, helps you upload files and cartridges in your Sandbox.
 
 ## Installation (Soon)
 
@@ -29,19 +28,20 @@ apm install atomforce
 
 Atomforce requires a file called `dw.json` in the `root` of your project, which is needed to connect to **WebDAV**. If it is not present, create one. The mandatory fields for the correct connection are shown below.
 
-| Keyword  | Mandatory | Type | Description |
-|----------|:---------:|:----:|-------------|
-| `hostname` | `true` | `string` | The Hostname of your sandbox without the `https` protocol. The name must end before `/on/demandware.store/`. |
-| `username` | `true` | `string` | The username used to access on your Sandbox. The same value of the field that in "Sandbox Istance" is called `login`. |
-| `password` | `true` | `string` | The password used to access on your Sandbox. |
-| `version` | `true` | `string` | The version of the code active in your Sandbox. You can check the version in `Administration > Site Development > Code Deployment`. |
-| `root` | `false` | `string` | Root option allows for path resolution of the file to upload *relative* to a directory. |
-| `cartridges` | `false` | `string` or `array` | List of cartridges to be uploaded and viewed by the watcher filesystem. |
-| `p12` | `false` | `string` | The path of `p12` file necessary for two-factor authentication. |
-| `passphrase` | `false` | `string` | The keyword necessary for two-factor authentication. If `p12` is set, `passphrase` become **mandatory**. |
+| Keyword      | Mandatory |        Type         | Description                                                                                                                         |
+| ------------ | :-------: | :-----------------: | ----------------------------------------------------------------------------------------------------------------------------------- |
+| `hostname`   |  `true`   |      `string`       | The Hostname of your sandbox without the `https` protocol. The name must end before `/on/demandware.store/`.                        |
+| `username`   |  `true`   |      `string`       | The username used to access on your Sandbox. The same value of the field that in "Sandbox Istance" is called `login`.               |
+| `password`   |  `true`   |      `string`       | The password used to access on your Sandbox.                                                                                        |
+| `version`    |  `true`   |      `string`       | The version of the code active in your Sandbox. You can check the version in `Administration > Site Development > Code Deployment`. |
+| `root`       |  `false`  |      `string`       | Root option allows for path resolution of the file to upload _relative_ to a directory.                                             |
+| `cartridges` |  `false`  | `string` or `array` | List of cartridges to be uploaded and viewed by the watcher filesystem.                                                             |
+| `p12`        |  `false`  |      `string`       | The path of `p12` file necessary for two-factor authentication.                                                                     |
+| `passphrase` |  `false`  |      `string`       | The keyword necessary for two-factor authentication. If `p12` is set, `passphrase` become **mandatory**.                            |
 
 A final example of how the file should be structured. <br />
-> *Remember to add the `dw.json` file in your `.gitignore` to avoid committing your Sandbox credentials!*.
+
+> _Remember to add the `dw.json` file in your `.gitignore` to avoid committing your Sandbox credentials!_.
 
 ```json
 {
@@ -54,8 +54,7 @@ A final example of how the file should be structured. <br />
 
 ### 2FA (Two-factor Authentication)
 
-Atomforce supports **2FA** (Two-factor Authentication). <br />
-The `p12` key can be added to the `dw.json` file, and the path of where the `p12` certificate file is allocated as the value. The `passphrase` key is also required, where the keyword required for authentication is indicated as the value.
+Atomforce supports **2FA** (Two-factor Authentication). <br /> The `p12` key can be added to the `dw.json` file, and the path of where the `p12` certificate file is allocated as the value. The `passphrase` key is also required, where the keyword required for authentication is indicated as the value.
 
 ```json
 {
@@ -76,8 +75,7 @@ openssl pkcs12 -export -in cert.staging.eu01.sample.demandware.net_01.crt -inkey
 
 ### Root
 
-Root option allows for path resolution of the file to upload *relative* to a directory on WebDAV. <br />
-To better understand this option, suppose we have the following structure.
+Root option allows for path resolution of the file to upload _relative_ to a directory on WebDAV. <br /> To better understand this option, suppose we have the following structure.
 
 ```
 cartridges/
@@ -86,6 +84,7 @@ cartridges/
 ├── plugin_wishlist/
 └── README.md
 ```
+
 In this structure in the WebDAV the `cartridges` folder will also be uploaded, to avoid this, just insert the initial path in the value of `root`, where the cartridges are allocated.
 
 ```json
@@ -115,8 +114,7 @@ The cartridges option allows you to stay in watch on one or more cartridges and 
 }
 ```
 
-The cartridges option can also be referred to as a string. Ex: `"cartridges": "app_storefront_base"`. <br />
-In that case the watcher filesystem will listen in all the folders inside the `string` path defined in the `cartridges` key. Final slash is not required.
+The cartridges option can also be referred to as a string. Ex: `"cartridges": "app_storefront_base"`. <br /> In that case the watcher filesystem will listen in all the folders inside the `string` path defined in the `cartridges` key. Final slash is not required.
 
 ## Additionals Packages
 

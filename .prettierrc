@@ -1,0 +1,11 @@
+{
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "singleQuote": true,
+  "semi": true,
+  "printWidth": 120,
+  "tabWidth": 4,
+  "trailingComma": "none",
+  "useTabs": false,
+  "jsxBracketSameLine": true
+}

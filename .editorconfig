@@ -7,6 +7,6 @@ indent_style = space
 indent_size = 4
 trim_trailing_whitespace = true
 
-[{package.json,package-lock.json,.eslintrc,.stylelintrc}]
+[{package.json,package-lock.json,.*}]
 indent_style = space
 indent_size = 2
