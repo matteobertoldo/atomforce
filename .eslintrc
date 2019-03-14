@@ -6,6 +6,7 @@
   },
   "globals": {
     "atom": true,
-    "HTMLElement": true
+    "HTMLElement": true,
+    "sessionStorage": true
   }
 }

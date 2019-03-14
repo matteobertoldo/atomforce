@@ -1,3 +1,5 @@
+@cubic-bezier: cubic-bezier(0.2, 1, 0.3, 1);
+
 .atomforce-tooltip {
     user-select: none;
 
@@ -62,7 +64,7 @@
         border-radius: @component-border-radius;
         margin-left: -0.156rem;
         padding: 1px 4px;
-        transition: background-color 0.45s var(--cb-curve), color 0.45s var(--cb-curve);
+        transition: background-color 0.45s @cubic-bezier, color 0.45s @cubic-bezier;
     }
 
     .input-toggle {
@@ -110,6 +112,12 @@
         font-weight: normal;
         margin-top: 4px;
         margin-bottom: 4px;
+        cursor: pointer;
+        transition: background-color 0.65s @cubic-bezier;
+
+        &:active {
+            background-color: @background-color-selected;
+        }
     }
 
     .progress {
