@@ -1,12 +1,15 @@
 {
+  "env": {
+    "browser": true,
+    "node": true
+  },
   "extends": "standard",
+  "globals": {
+    "atom": true,
+    "HTMLElement": true
+  },
   "rules": {
     "indent": ["error", 4],
     "semi": ["error", "always"]
-  },
-  "globals": {
-    "atom": true,
-    "HTMLElement": true,
-    "sessionStorage": true
   }
 }
