@@ -1,3 +1,14 @@
+### 0.7.1 - 2019-03-18
+
+### Changed
+
+-   Updated all the `devDepencies` & `depencies` to the latest version.
+-   Modified the `DWDAV` class without the lodash `_.extend` method and replaced with the default `Object.assign` javascript method
+
+### Removed
+
+-   Removed `lodash` as depencies.
+
 ## 0.7.0 - 2019-02-22
 
 ### Added

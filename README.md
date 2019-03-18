@@ -1,6 +1,6 @@
 # Atomforce
 
-[![Build Status](https://travis-ci.com/matteobertoldo/atomforce.svg?branch=master)](https://travis-ci.com/matteobertoldo/atomforce) [![Code Style: Prettier](https://img.shields.io/badge/code_style-prettier-2f8ed9.svg)](https://github.com/prettier/prettier)
+[![build status](https://travis-ci.com/matteobertoldo/atomforce.svg?branch=master)](https://travis-ci.com/matteobertoldo/atomforce) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 Salesforce Commerce Cloud (ex Demandware) uploader for Atom. Upload your files and cartridges on SFCC via WebDAV. <br /> Atomforce is a package for Atom, that with a simple interface in the Status Bar, helps you upload files and cartridges in your Sandbox.
 
@@ -18,11 +18,11 @@ apm install atomforce
 ### GUI
 
 1.  Install the latest version of [Atom](https://atom.io)
-1.  Launch Atom
-1.  Open Settings View using <kbd>Cmd+,</kbd> on macOS or <kbd>Ctrl+,</kbd> on other platforms
-1.  Click the Install tab on the left side
-1.  Enter `atomforce` in the search box and press <kbd>Enter</kbd>
-1.  Click the "Install" button that appears
+2.  Launch Atom
+3.  Open Settings View using <kbd>Cmd+,</kbd> on macOS or <kbd>Ctrl+,</kbd> on other platforms
+4.  Click the Install tab on the left side
+5.  Enter `atomforce` in the search box and press <kbd>Enter</kbd>
+6.  Click the "Install" button that appears
 
 ## DW File
 
@@ -116,6 +116,12 @@ The cartridges option allows you to stay in watch on one or more cartridges and 
 
 The cartridges option can also be referred to as a string. Ex: `"cartridges": "app_storefront_base"`. <br /> In that case the watcher filesystem will listen in all the folders inside the `string` path defined in the `cartridges` key. Final slash is not required.
 
+### Cartridges Definition
+
+By default, if the value of the `cartridges` key is passed as `String` all the content (files and folders) of the path passed as a value will be uploaded to the WebDAV, without however creating the path starting from the defined string.
+
+If you want to upload the entire path defined in the `cartridges` key, just pass the value as an `Array`.
+
 ## Additionals Packages
 
 To improve the development workflow in Salesforce Commerce Colud we recommend installing the `.isml` & `.ds` syntax.
@@ -123,6 +129,13 @@ To improve the development workflow in Salesforce Commerce Colud we recommend in
 -   [language-demandware](https://atom.io/packages/language-demandware)
 
 ## Contributing
+
+### Prerequisites
+
+1.  Latest version of [Atom](https://atom.io)
+2.  Installed Packages: [atom-prettier](https://atom.io/packages/prettier-atom), [editorconfig](https://atom.io/packages/editorconfig), [language-babel](https://atom.io/packages/language-babel), [linter](https://atom.io/packages/linter), [linter-eslint](https://atom.io/packages/linter-eslint), [linter-markdown](https://atom.io/packages/linter-markdown)
+
+### Contributing Details
 
 Please read [CONTRIBUTING.md](https://github.com/matteobertoldo/atomforce/blob/master/CONTRIBUTING.md) for details on code of conduct, and the process for submitting pull requests.
 
