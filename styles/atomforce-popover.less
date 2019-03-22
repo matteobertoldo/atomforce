@@ -120,6 +120,12 @@
         }
     }
 
+    progress {
+        &:indeterminate {
+            -webkit-animation: progress-buffering 5s linear infinite;
+        }
+    }
+
     .progress {
         width: 220px;
         margin-top: 8px;
