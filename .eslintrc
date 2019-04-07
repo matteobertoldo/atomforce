@@ -10,6 +10,7 @@
         "HTMLElement": true
     },
     "rules": {
+        "global-require": error,
         "indent": ["error", 4],
         "semi": ["error", "always"]
     }
