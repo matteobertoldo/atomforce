@@ -1,6 +1,6 @@
 # Atomforce
 
-[![build status](https://travis-ci.com/matteobertoldo/atomforce.svg?branch=master)](https://travis-ci.com/matteobertoldo/atomforce) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![build status](https://travis-ci.com/matteobertoldo/atomforce.svg?branch=master)](https://travis-ci.com/matteobertoldo/atomforce) [![dependencies Status](https://david-dm.org/matteobertoldo/atomforce/status.svg)](https://david-dm.org/matteobertoldo/atomforce) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 _Salesforce Commerce Cloud_ (ex Demandware) uploader for Atom. Upload your files and cartridges on SFCC via WebDAV. <br /> Atomforce is a package for Atom, that with a simple interface in the Status Bar, helps you upload files and cartridges in your Sandbox.
 
