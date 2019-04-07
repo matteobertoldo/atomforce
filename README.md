@@ -2,7 +2,7 @@
 
 [![build status](https://travis-ci.com/matteobertoldo/atomforce.svg?branch=master)](https://travis-ci.com/matteobertoldo/atomforce) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
-Salesforce Commerce Cloud (ex Demandware) uploader for Atom. Upload your files and cartridges on SFCC via WebDAV. <br /> Atomforce is a package for Atom, that with a simple interface in the Status Bar, helps you upload files and cartridges in your Sandbox.
+_Salesforce Commerce Cloud_ (ex Demandware) uploader for Atom. Upload your files and cartridges on SFCC via WebDAV. <br /> Atomforce is a package for Atom, that with a simple interface in the Status Bar, helps you upload files and cartridges in your Sandbox.
 
 ## Installation (Soon)
 
@@ -133,7 +133,13 @@ To improve the development workflow in Salesforce Commerce Colud we recommend in
 ### Prerequisites
 
 1.  Latest version of [Atom](https://atom.io)
-2.  Installed Packages: [atom-prettier](https://atom.io/packages/prettier-atom), [editorconfig](https://atom.io/packages/editorconfig), [language-babel](https://atom.io/packages/language-babel), [linter](https://atom.io/packages/linter), [linter-eslint](https://atom.io/packages/linter-eslint), [linter-markdown](https://atom.io/packages/linter-markdown)
+2.  Installed Packages:
+    -   [atom-prettier](https://atom.io/packages/prettier-atom)
+    -   [editorconfig](https://atom.io/packages/editorconfig)
+    -   [language-babel](https://atom.io/packages/language-babel)
+    -   [linter](https://atom.io/packages/linter)
+    -   [linter-eslint](https://atom.io/packages/linter-eslint)
+    -   [linter-markdown](https://atom.io/packages/linter-markdown)
 
 ### Contributing Details
 

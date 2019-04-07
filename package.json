@@ -1,7 +1,7 @@
 {
   "name": "atomforce",
   "main": "./lib/atomforce",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "Salesforce Commerce Cloud (ex Demandware) uploader for Atom. Upload your files and cartridges on SFCC via WebDAV.",
   "keywords": [
     "atom",
@@ -34,27 +34,31 @@
   },
   "activationCommands": {},
   "devDependencies": {
-    "eslint": "^5.15.2",
+    "eslint": "^5.16.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
+    "husky": "^1.3.1",
     "stylelint": "^9.10.1",
     "stylelint-config-standard": "^18.2.0"
   },
   "dependencies": {
-    "chokidar": "^2.1.2",
-    "del": "^4.0.0",
+    "chokidar": "^2.1.5",
+    "del": "^4.1.0",
     "etch": "^0.14.0",
     "multimatch": "^3.0.0",
-    "p-queue": "^4.0.0",
     "request": "^2.88.0",
     "walk": "^2.3.14",
     "yazl": "^2.5.1"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
   "scripts": {
-    "eslint": "eslint .",
-    "stylelint": "stylelint ./styles"
+    "lint": "eslint . && stylelint ./styles"
   }
 }

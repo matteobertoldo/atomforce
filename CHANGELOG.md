@@ -1,3 +1,24 @@
+### 0.7.2 - 2019-04-07
+
+### Changed
+
+-   Changed "Upload All Cartridges" task with new queue function with `Array.prototype.reduce()`.
+-   Changed the `atomforce.less` file with all styles to improve performance.
+-   Updated all the `devDepencies` & `depencies` to the latest version.
+
+### Fixed
+
+-   Fixed editorconfig warnings.
+
+### Removed
+
+-   Removed `p-queue` as depencies.
+-   Removed `log` option on filesystem events in package settings.
+
+### Added
+
+-   New `husky's` hook for parse all files before committing.
+
 ### 0.7.1 - 2019-03-18
 
 ### Changed
