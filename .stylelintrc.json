@@ -1,5 +1,11 @@
 {
     "extends": "stylelint-config-standard",
+    "max-nesting-depth": [
+        4,
+        {
+            "ignore": ["blockless-at-rules", "pseudo-classes"]
+        }
+    ],
     "rules": {
         "indentation": 4
     }
