@@ -1,3 +1,12 @@
+### 0.7.3 - 2019-08-26
+
+### Changed
+
+-   Changed `.eslintrc` file extension with the [recommended](https://eslint.org/docs/user-guide/configuring#configuration-file-formats) `json` format.
+-   Added new `eslint plugin:react/recommended` for write correct `jsx` syntax.
+-   Updated all `depencies` to the latest version.
+-   Minor fixes on styles.
+
 ### 0.7.2 - 2019-04-07
 
 ### Changed

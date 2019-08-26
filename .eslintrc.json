@@ -1,0 +1,30 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": ["standard", "plugin:react/recommended"],
+    "globals": {
+        "atom": true,
+        "HTMLElement": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "plugins": ["react"],
+    "rules": {
+        "global-require": "error",
+        "import/extensions": ["error", "never"],
+        "indent": ["error", 4],
+        "semi": ["error", "always"]
+    },
+    "settings": {
+        "react": {
+            "pragma": "etch",
+            "version": "detect"
+        }
+    }
+}

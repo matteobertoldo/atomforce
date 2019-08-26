@@ -1,6 +1,6 @@
 # Atomforce
 
-[![build status](https://travis-ci.com/matteobertoldo/atomforce.svg?branch=master)](https://travis-ci.com/matteobertoldo/atomforce) [![dependencies Status](https://david-dm.org/matteobertoldo/atomforce/status.svg)](https://david-dm.org/matteobertoldo/atomforce) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![dependencies Status](https://david-dm.org/matteobertoldo/atomforce/status.svg)](https://david-dm.org/matteobertoldo/atomforce) [![code of: conduct](https://img.shields.io/badge/code_of-conduct-ff69b4.svg)](https://github.com/prettier/prettier)
 
 _Salesforce Commerce Cloud_ (ex Demandware) uploader for Atom. Upload your files and cartridges on SFCC via WebDAV. <br /> Atomforce is a package for Atom, that with a simple interface in the Status Bar, helps you upload files and cartridges in your Sandbox.
 
@@ -101,7 +101,7 @@ If the value of `root` is: `.` the full path will be considered, so the `cartrid
 
 ### Cartridges List
 
-The cartridges option allows you to stay in watch on one or more cartridges and upload these accordingly in WebDAV. If this option is not defined in the `dw.json` file, the watcher filesystem will listen all event (add, change and delete) to all files and folders in the project root or path indicated in the `root` option, and all files and folders will be uploaded.
+The `cartridges` option allows you to stay in watch on one or more cartridges and upload these accordingly in WebDAV. If this option is not defined in the `dw.json` file, the watcher filesystem will listen all event (add, change and delete) to all files and folders in the project root or path indicated in the `root` option, and all files and folders will be uploaded.
 
 ```json
 {
