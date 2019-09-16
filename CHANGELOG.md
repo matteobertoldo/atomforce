@@ -1,3 +1,12 @@
+### 0.7.4 - 2019-09-16
+
+### Changed
+
+-   Added new progress _ui_ indication for `Upload All Cartridges` task.
+-   Added "Getting Started" section for contributing guidelines.
+-   Updated `CODE_OF_CONDUCT.md` file with remark-lint.
+-   Minor fixes on styles.
+
 ### 0.7.3 - 2019-08-26
 
 ### Changed

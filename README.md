@@ -1,6 +1,6 @@
 # Atomforce
 
-[![dependencies Status](https://david-dm.org/matteobertoldo/atomforce/status.svg)](https://david-dm.org/matteobertoldo/atomforce) [![code of: conduct](https://img.shields.io/badge/code_of-conduct-ff69b4.svg)](https://github.com/prettier/prettier)
+[![Plugin installs](https://img.shields.io/apm/dm/atomforce.svg)](https://atom.io/packages/atomforce) [![dependencies Status](https://david-dm.org/matteobertoldo/atomforce/status.svg)](https://david-dm.org/matteobertoldo/atomforce) [![code of: conduct](https://img.shields.io/badge/code_of-conduct-ff69b4.svg)](https://github.com/prettier/prettier)
 
 _Salesforce Commerce Cloud_ (ex Demandware) uploader for Atom. Upload your files and cartridges on SFCC via WebDAV. <br /> Atomforce is a package for Atom, that with a simple interface in the Status Bar, helps you upload files and cartridges in your Sandbox.
 
@@ -69,7 +69,7 @@ Atomforce supports **2FA** (Two-factor Authentication). <br /> The `p12` key can
 
 The `p12` certificate can be built using:
 
-```bash
+```sh
 openssl pkcs12 -export -in cert.staging.eu01.sample.demandware.net_01.crt -inkey cert.staging.eu01.sample.demandware.net_01.key -out certificate.p12
 ```
 
@@ -134,12 +134,21 @@ To improve the development workflow in Salesforce Commerce Colud we recommend in
 
 1.  Latest version of [Atom](https://atom.io)
 2.  Installed Packages:
-    -   [atom-prettier](https://atom.io/packages/prettier-atom)
+    -   [atom-prettier](https://atom.io/packages/prettier-atom) with `ESLint & Stylelint Integration` enabled.
     -   [editorconfig](https://atom.io/packages/editorconfig)
-    -   [language-babel](https://atom.io/packages/language-babel)
     -   [linter](https://atom.io/packages/linter)
     -   [linter-eslint](https://atom.io/packages/linter-eslint)
     -   [linter-markdown](https://atom.io/packages/linter-markdown)
+    -   [linter-stylelint](https://atom.io/packages/linter-stylelint)
+
+### Getting Started
+
+Before cloning the repository, make sure you have installed [node.js](https://nodejs.org) on your OS.
+
+-   `cd /Users/admin/.atom/packages`
+-   `git clone https://github.com/matteobertoldo/atomforce.git`
+-   `npm i`
+-   On `atom` go to `View/Developer/Reload Window`
 
 ### Contributing Details
 
