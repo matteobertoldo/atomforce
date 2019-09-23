@@ -1,6 +1,6 @@
 # Atomforce
 
-[![Plugin installs](https://img.shields.io/apm/dm/atomforce.svg)](https://atom.io/packages/atomforce) [![dependencies Status](https://david-dm.org/matteobertoldo/atomforce/status.svg)](https://david-dm.org/matteobertoldo/atomforce) [![code of: conduct](https://img.shields.io/badge/code_of-conduct-ff69b4.svg)](https://github.com/prettier/prettier)
+[![Plugin installs](https://img.shields.io/apm/dm/atomforce.svg)](https://atom.io/packages/atomforce) [![dependencies Status](https://david-dm.org/matteobertoldo/atomforce/status.svg)](https://david-dm.org/matteobertoldo/atomforce) [![code of: conduct](https://img.shields.io/badge/code_of-conduct-ff69b4.svg)](https://github.com/prettier/prettier) [![Maintainability](https://api.codeclimate.com/v1/badges/c0882cabd1d577eaceef/maintainability)](https://codeclimate.com/github/matteobertoldo/atomforce/maintainability)
 
 _Salesforce Commerce Cloud_ (ex Demandware) uploader for Atom. Upload your files and cartridges on SFCC via WebDAV. <br /> Atomforce is a package for Atom, that with a simple interface in the Status Bar, helps you upload files and cartridges in your Sandbox.
 
@@ -132,7 +132,7 @@ To improve the development workflow in Salesforce Commerce Colud we recommend in
 
 ### Prerequisites
 
-1.  Latest version of [Atom](https://atom.io)
+1.  Latest version of [Atom](https://atom.io) installed.
 2.  Installed Packages:
     -   [atom-prettier](https://atom.io/packages/prettier-atom) with `ESLint & Stylelint Integration` enabled.
     -   [editorconfig](https://atom.io/packages/editorconfig)
@@ -143,12 +143,12 @@ To improve the development workflow in Salesforce Commerce Colud we recommend in
 
 ### Getting Started
 
-Before cloning the repository, make sure you have installed [node.js](https://nodejs.org) on your OS.
+Before cloning the repository, make sure you have [node.js](https://nodejs.org) installed on your OS.
 
 -   `cd /Users/admin/.atom/packages`
 -   `git clone https://github.com/matteobertoldo/atomforce.git`
 -   `npm i`
--   On `atom` go to `View/Developer/Reload Window`
+-   `atom --dev`
 
 ### Contributing Details
 
