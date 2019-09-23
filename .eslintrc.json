@@ -24,7 +24,7 @@
     "settings": {
         "react": {
             "pragma": "etch",
-            "version": "detect"
+            "version": "latest"
         }
     }
 }
