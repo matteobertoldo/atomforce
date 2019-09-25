@@ -27,34 +27,32 @@
     }
 }
 
-.status-bar {
-    .atomforce-status-bar {
+.atomforce-status-bar {
+    .icon {
+        display: inline-block;
+        min-width: 16px;
+        text-align: center;
+
+        &::before {
+            margin-right: 0;
+        }
+    }
+
+    &.connected {
         .icon {
-            display: inline-block;
-            min-width: 16px;
-            text-align: center;
-
-            &::before {
-                margin-right: 0;
-            }
+            color: @text-color-info;
         }
+    }
 
-        &.connected {
-            .icon {
-                color: @text-color-info;
-            }
+    &.uploading {
+        .icon::before {
+            animation: statusbar-up 0.8s ease-out infinite, statusbar-fade 0.8s ease-out infinite;
         }
+    }
 
-        &.uploading {
-            .icon::before {
-                animation: statusbar-up 0.8s ease-out infinite, statusbar-fade 0.8s ease-out infinite;
-            }
-        }
-
-        &.error {
-            .icon {
-                color: @text-color-error;
-            }
+    &.error {
+        .icon {
+            color: @text-color-error;
         }
     }
 }
@@ -191,15 +189,94 @@
     }
 }
 
-.atomforce-tab-empty {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.atomforce-tab {
+    cursor: default;
+    user-select: none;
 
-    .atomforce-dwdav-empty {
-        text-align: center;
-        user-select: none;
-        cursor: default;
-        padding: 10px;
+    &-empty {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .atomforce-dwdav-empty {
+            text-align: center;
+            user-select: none;
+            cursor: default;
+            padding: @component-padding;
+        }
+    }
+
+    .atomforce-tab-header {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        border-bottom: 1px solid @base-border-color;
+        padding: 0 0 0 @component-padding;
+
+        .icon {
+            &-database {
+                &::before {
+                    margin-right: 8px;
+                }
+            }
+
+            &::before {
+                vertical-align: middle;
+                color: @text-color-subtle;
+            }
+        }
+
+        .hostname {
+            flex: 1;
+            line-height: 2.5em;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            margin-right: 10px;
+            overflow: hidden;
+        }
+
+        .button-list {
+            &-count {
+                &::before {
+                    width: auto;
+                }
+            }
+
+            &-count,
+            &-clear {
+                height: 2.5em;
+                border: none;
+                border-left: 1px solid @base-border-color;
+                font-weight: normal;
+                white-space: nowrap;
+                background: none;
+                padding: 0 @component-padding;
+                cursor: default;
+
+                &::before {
+                    font-size: 1em;
+                    text-align: left;
+                    margin-right: 0;
+                }
+
+                &:active {
+                    background-color: @button-background-color-hover;
+                }
+            }
+        }
+    }
+}
+
+.status-bar {
+    .atomforce-status-bar {
+        .icon {
+            display: inline-block;
+            min-width: 16px;
+            text-align: center;
+
+            &::before {
+                margin-right: 0;
+            }
+        }
     }
 }

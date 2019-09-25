@@ -1,6 +1,6 @@
 # Atomforce
 
-[![Plugin installs](https://img.shields.io/apm/dm/atomforce.svg)](https://atom.io/packages/atomforce) [![dependencies Status](https://david-dm.org/matteobertoldo/atomforce/status.svg)](https://david-dm.org/matteobertoldo/atomforce) [![code of: conduct](https://img.shields.io/badge/code_of-conduct-ff69b4.svg)](https://github.com/prettier/prettier) [![Maintainability](https://api.codeclimate.com/v1/badges/c0882cabd1d577eaceef/maintainability)](https://codeclimate.com/github/matteobertoldo/atomforce/maintainability)
+[![Plugin installs](https://img.shields.io/apm/dm/atomforce.svg)](https://atom.io/packages/atomforce) [![dependencies Status](https://david-dm.org/matteobertoldo/atomforce/status.svg)](https://david-dm.org/matteobertoldo/atomforce) [![code of: conduct](https://img.shields.io/badge/code_of-conduct-ff69b4.svg)](https://github.com/prettier/prettier) [![Maintainability](https://api.codeclimate.com/v1/badges/c0882cabd1d577eaceef/maintainability)](https://codeclimate.com/github/matteobertoldo/atomforce/maintainability) [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/atomforce)
 
 _Salesforce Commerce Cloud_ (ex Demandware) uploader for Atom. Upload your files and cartridges on SFCC via WebDAV. <br /> Atomforce is a package for Atom, that with a simple interface in the Status Bar, helps you upload files and cartridges in your Sandbox.
 
@@ -124,7 +124,7 @@ If you want to upload the entire path defined in the `cartridges` key, just pass
 
 ## Additionals Packages
 
-To improve the development workflow in Salesforce Commerce Colud we recommend installing the `.isml` & `.ds` syntax.
+To improve the development workflow in Salesforce Commerce Colud we recommend installing the `.isml` &amp; `.ds` syntax.
 
 -   [language-demandware](https://atom.io/packages/language-demandware)
 
@@ -134,7 +134,7 @@ To improve the development workflow in Salesforce Commerce Colud we recommend in
 
 1.  Latest version of [Atom](https://atom.io) installed.
 2.  Installed Packages:
-    -   [atom-prettier](https://atom.io/packages/prettier-atom) with `ESLint & Stylelint Integration` enabled.
+    -   [atom-prettier](https://atom.io/packages/prettier-atom) with `ESLint` &amp; `Stylelint` integration enabled.
     -   [editorconfig](https://atom.io/packages/editorconfig)
     -   [linter](https://atom.io/packages/linter)
     -   [linter-eslint](https://atom.io/packages/linter-eslint)
@@ -156,4 +156,4 @@ Please read [CONTRIBUTING.md](https://github.com/matteobertoldo/atomforce/blob/m
 
 ## License
 
-Atomforce is licensed under the MIT License - see the [LICENSE.md](https://github.com/matteobertoldo/atomforce/blob/master/LICENSE.md) file for details.
+&copy; 2018-2019 Atomforce is licensed under the MIT License - see the [LICENSE.md](https://github.com/matteobertoldo/atomforce/blob/master/LICENSE.md) file for details.
