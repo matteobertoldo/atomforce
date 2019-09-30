@@ -28,6 +28,18 @@
 }
 
 .atomforce-status-bar {
+    .status-bar & {
+        .icon {
+            display: inline-block;
+            min-width: 16px;
+            text-align: center;
+
+            &::before {
+                margin-right: 0;
+            }
+        }
+    }
+
     .icon {
         display: inline-block;
         min-width: 16px;
@@ -206,9 +218,25 @@
         }
     }
 
-    .atomforce-tab-header {
+    &-components {
+        position: relative;
+        display: flex;
+        height: 100%;
+
+        &:not(.loading) {
+            flex-direction: column;
+        }
+
+        &.loading {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &-header {
         display: flex;
         align-items: center;
+        flex: 0 1 auto;
         font-weight: 600;
         border-bottom: 1px solid @base-border-color;
         padding: 0 0 0 @component-padding;
@@ -265,17 +293,35 @@
             }
         }
     }
-}
 
-.status-bar {
-    .atomforce-status-bar {
-        .icon {
-            display: inline-block;
-            min-width: 16px;
+    &-files-view {
+        flex: 1 0 auto;
+        overflow-y: auto;
+
+        &-empty {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+    }
+
+    .dwdav-pathame-items {
+        display: flex;
+        align-items: flex-start;
+        padding: (@component-padding / 2) @component-padding;
+        padding-left: 35px;
+        overflow: hidden;
+
+        &-empty {
             text-align: center;
+            color: @text-color-subtle;
+            padding: (@component-padding / 2) @component-padding;
+        }
 
+        .icon {
             &::before {
-                margin-right: 0;
+                margin-right: 8px;
             }
         }
     }
