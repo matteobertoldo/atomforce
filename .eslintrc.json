@@ -19,6 +19,7 @@
         "global-require": "error",
         "import/extensions": ["error", "never"],
         "indent": ["error", 4],
+        "no-console": "error",
         "semi": ["error", "always"]
     },
     "settings": {

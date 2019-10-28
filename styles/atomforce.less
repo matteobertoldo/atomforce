@@ -27,8 +27,8 @@
     }
 }
 
-.status-bar {
-    .atomforce-status-bar {
+.atomforce-status-bar {
+    .status-bar & {
         .icon {
             display: inline-block;
             min-width: 16px;
@@ -38,23 +38,33 @@
                 margin-right: 0;
             }
         }
+    }
 
-        &.connected {
-            .icon {
-                color: @text-color-info;
-            }
+    .icon {
+        display: inline-block;
+        min-width: 16px;
+        text-align: center;
+
+        &::before {
+            margin-right: 0;
         }
+    }
 
-        &.uploading {
-            .icon::before {
-                animation: statusbar-up 0.8s ease-out infinite, statusbar-fade 0.8s ease-out infinite;
-            }
+    &.connected {
+        .icon {
+            color: @text-color-info;
         }
+    }
 
-        &.error {
-            .icon {
-                color: @text-color-error;
-            }
+    &.uploading {
+        .icon::before {
+            animation: statusbar-up 0.8s ease-out infinite, statusbar-fade 0.8s ease-out infinite;
+        }
+    }
+
+    &.error {
+        .icon {
+            color: @text-color-error;
         }
     }
 }
@@ -191,15 +201,206 @@
     }
 }
 
-.atomforce-tab-empty {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.atomforce-tab {
+    cursor: default;
+    user-select: none;
 
-    .atomforce-dwdav-empty {
-        text-align: center;
-        user-select: none;
-        cursor: default;
-        padding: 10px;
+    &-empty {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .atomforce-dwdav-empty {
+            text-align: center;
+            user-select: none;
+            cursor: default;
+            padding: @component-padding;
+        }
+    }
+
+    &-components {
+        position: relative;
+        display: flex;
+        height: 100%;
+
+        &:not(.loading) {
+            flex-direction: column;
+        }
+
+        &.loading {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &-header {
+        display: flex;
+        align-items: center;
+        flex: 0 0 auto;
+        font-weight: 600;
+        min-height: 2.5em;
+        border-bottom: 1px solid @base-border-color;
+        padding: 0 0 0 @component-padding;
+
+        .icon {
+            &-database {
+                &::before {
+                    margin-right: 8px;
+                }
+            }
+
+            &::before {
+                vertical-align: middle;
+                color: @text-color-subtle;
+            }
+        }
+
+        .hostname {
+            flex: 1;
+            line-height: 2.5em;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            margin-right: 10px;
+            overflow: hidden;
+        }
+
+        .button-list {
+            &-count {
+                &::before {
+                    width: auto;
+                }
+            }
+
+            &-count,
+            &-clear {
+                height: 2.5em;
+                border: none;
+                border-left: 1px solid @base-border-color;
+                font-weight: normal;
+                white-space: nowrap;
+                background: none;
+                padding: 0 @component-padding;
+                cursor: default;
+
+                &::before {
+                    font-size: 1em;
+                    text-align: left;
+                    margin-right: 0;
+                }
+
+                &:active {
+                    background-color: @button-background-color-hover;
+                }
+            }
+        }
+    }
+
+    &-files-view {
+        overflow-y: auto;
+
+        &-empty {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        &.show-files-size {
+            .dwdav-pathame-item {
+                &[data-file-size] {
+                    &::before {
+                        content: attr(data-file-size);
+                        color: @text-color-subtle;
+                        position: absolute;
+                        left: 10px;
+                        font-size: 10px;
+                        font-style: italic;
+                    }
+                }
+
+                .icon {
+                    margin-left: 32px;
+                }
+            }
+        }
+    }
+
+    .dwdav-pathame {
+        &-items {
+            padding-left: 25px;
+            overflow: hidden;
+
+            &-empty {
+                text-align: center;
+                color: @text-color-subtle;
+                padding: (@component-padding / 2) @component-padding;
+            }
+        }
+
+        &-item {
+            display: flex;
+            align-items: flex-start;
+            padding: (@component-padding / 2) @component-padding;
+
+            .icon {
+                &::before {
+                    margin-right: 8px;
+                }
+            }
+
+            .pathame {
+                flex: 1;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                padding-right: 16px;
+            }
+        }
+    }
+
+    &-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex: 0 0 auto;
+        font-size: @font-size;
+        border-top: 1px solid @base-border-color;
+        margin-top: auto;
+
+        .icon {
+            &::before {
+                vertical-align: middle;
+                color: @text-color-subtle;
+                margin-right: 8px;
+            }
+        }
+
+        .label {
+            font-weight: 600;
+        }
+
+        .label,
+        .value {
+            display: block;
+        }
+
+        .value {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            margin-left: 4px;
+        }
+
+        .tab-footer-row {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            padding: 16px @component-padding;
+
+            &:last-of-type {
+                justify-content: flex-end;
+            }
+        }
     }
 }
