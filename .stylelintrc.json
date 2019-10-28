@@ -6,10 +6,12 @@
             "ignore": ["blockless-at-rules", "pseudo-classes"]
         }
     ],
+    "plugins": ["stylelint-declaration-use-variable"],
     "rules": {
         "indentation": 4,
         "no-descending-specificity": null,
         "selector-no-qualifying-type": true,
-        "selector-class-pattern": "^_?[a-z0-9]+(-[a-z0-9]+)*$"
+        "selector-class-pattern": "^_?[a-z0-9]+(-[a-z0-9]+)*$",
+        "sh-waqar/declaration-use-variable": ["color", "background-color", "border-color"]
     }
 }

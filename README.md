@@ -1,8 +1,8 @@
 # Atomforce
 
-[![Plugin installs](https://img.shields.io/apm/dm/atomforce.svg)](https://atom.io/packages/atomforce) [![dependencies Status](https://david-dm.org/matteobertoldo/atomforce/status.svg)](https://david-dm.org/matteobertoldo/atomforce) [![code of: conduct](https://img.shields.io/badge/code_of-conduct-ff69b4.svg)](https://github.com/prettier/prettier) [![Maintainability](https://api.codeclimate.com/v1/badges/c0882cabd1d577eaceef/maintainability)](https://codeclimate.com/github/matteobertoldo/atomforce/maintainability) [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/atomforce)
+[![Plugin installs](https://img.shields.io/apm/dm/atomforce.svg)](https://atom.io/packages/atomforce) [![dependencies Status](https://david-dm.org/matteobertoldo/atomforce/status.svg)](https://david-dm.org/matteobertoldo/atomforce) [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/atomforce) [![code of: conduct](https://img.shields.io/badge/code_of-conduct-ff69b4.svg)](https://github.com/prettier/prettier)
 
-_Salesforce Commerce Cloud_ (ex Demandware) uploader for Atom. Upload your files and cartridges on SFCC via WebDAV. <br /> Atomforce is a package for Atom, that with a simple interface in the Status Bar, helps you upload files and cartridges in your Sandbox.
+_Salesforce Commerce Cloud_ (ex Demandware) uploader for Atom. Upload your files and cartridges on SFCC via WebDAV. <br /> Atomforce is a package for [Atom](https://atom.io), that with a simple interface in the Status Bar, helps you upload files and cartridges in your Sandbox.
 
 ## Installation (Soon)
 
@@ -145,9 +145,10 @@ To improve the development workflow in Salesforce Commerce Colud we recommend in
 
 Before cloning the repository, make sure you have [node.js](https://nodejs.org) installed on your OS.
 
--   `cd /Users/admin/.atom/packages`
+-   `cd ~/.atom/packages`
 -   `git clone https://github.com/matteobertoldo/atomforce.git`
--   `npm i`
+-   `cd atomforce`
+-   `apm install`
 -   `atom --dev`
 
 ### Contributing Details
@@ -156,4 +157,4 @@ Please read [CONTRIBUTING.md](https://github.com/matteobertoldo/atomforce/blob/m
 
 ## License
 
-&copy; 2018-2019 Atomforce is licensed under the MIT License - see the [LICENSE.md](https://github.com/matteobertoldo/atomforce/blob/master/LICENSE.md) file for details.
+Atomforce is licensed under the MIT License - see the [LICENSE.md](https://github.com/matteobertoldo/atomforce/blob/master/LICENSE.md) file for details.

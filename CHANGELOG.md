@@ -1,3 +1,22 @@
+### 0.8.0 - 2019-10-28
+
+### Added
+
+-   New _ui_ for `tab` area and new file component for `etch JSX DOM`.
+-   New list for files Uploaded on WebDAV with a new icons to highlights the events triggered via filesystem watcher.
+-   New mini actions, with Electron API for file list view, as "Show file size".
+-   New activity status on status bar.
+-   New badge for [`spectrum`](https://spectrum.chat) chat.
+
+### Changed
+
+-   Changed "Upload all cartridges" callback. Now when all the cartridges have been loaded, the filesystem watcher is kept active automatically, without re-enabling it later.
+-   Updated most of `devDepencies` & `depencies` to the latest version.
+
+### Fixed
+
+-   Fixed a bug that allowed you to upload files and cartridges equally, even without hanging the status bar (if in the preferences of the package it is set to `false` for `Status Bar` setting).
+
 ### 0.7.4 - 2019-09-16
 
 ### Changed
