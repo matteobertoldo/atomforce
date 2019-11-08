@@ -1,3 +1,19 @@
+### 0.8.1 - 2019-11-08
+
+### Changed
+
+-   Changed Keybindings on multi-platforms. Now it's possible to enable the `tab` by typing the native commands according to the operating system.
+-   Small refactoring on the addition of `disposables` events in Atom. Now all the features of Atomforce are added to a single subscription.
+
+### Fixed
+
+-   Fixed a graphic error displaying the "warning" icon when a directory was deleted locally, but an error on the server returned from WebDAV.
+-   Fixed the Atomforce Tab removal event, once clicked on "Disable" from the installed packages settings.
+
+### Removed
+
+-   Removed keybinding for `"Enable Status Bar"` command.
+
 ### 0.8.0 - 2019-10-28
 
 ### Added
