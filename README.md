@@ -1,6 +1,35 @@
-# Atomforce
+<h1>Atomforce</h1>
 
-[![Plugin installs](https://img.shields.io/apm/dm/atomforce.svg)](https://atom.io/packages/atomforce) [![dependencies Status](https://david-dm.org/matteobertoldo/atomforce/status.svg)](https://david-dm.org/matteobertoldo/atomforce) [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/atomforce) [![code of: conduct](https://img.shields.io/badge/code_of-conduct-ff69b4.svg)](https://github.com/prettier/prettier)
+<p>
+    <a href="https://atom.io/packages/atomforce">
+        <img
+            src="https://img.shields.io/apm/dm/atomforce.svg"
+            alt="Plugin installs"
+            style="max-width:100%;"
+        />
+    </a>
+    <a href="https://david-dm.org/matteobertoldo/atomforce">
+        <img
+            src="https://david-dm.org/matteobertoldo/atomforce/status.svg"
+            alt="dependencies Status"
+            style="max-width:100%;"
+        />
+    </a>
+    <a href="https://spectrum.chat/atomforce">
+        <img
+            src="https://withspectrum.github.io/badge/badge.svg"
+            alt="Join the community on Spectrum"
+            style="max-width:100%;"
+        />
+    </a>
+    <a href="https://github.com/prettier/prettier">
+        <img
+            src="https://img.shields.io/badge/code_of-conduct-ff69b4.svg"
+            alt="code of: conduct"
+            style="max-width:100%;"
+        />
+    </a>
+</p>
 
 _Salesforce Commerce Cloud_ (ex Demandware) uploader for Atom. Upload your files and cartridges on SFCC via WebDAV. <br /> Atomforce is a package for [Atom](https://atom.io), that with a simple interface in the Status Bar, helps you upload files and cartridges in your Sandbox.
 
@@ -24,7 +53,7 @@ apm install atomforce
 5.  Enter `atomforce` in the search box and press <kbd>Enter</kbd>
 6.  Click the "Install" button that appears
 
-## DW File
+## dw.json File
 
 Atomforce requires a file called `dw.json` in the `root` of your project, which is needed to connect to **WebDAV**. If it is not present, create one. The mandatory fields for the correct connection are shown below.
 
