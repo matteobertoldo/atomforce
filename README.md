@@ -1,13 +1,6 @@
 <h1>Atomforce</h1>
 
 <p>
-    <a href="https://atom.io/packages/atomforce">
-        <img
-            src="https://img.shields.io/apm/dm/atomforce.svg"
-            alt="Plugin installs"
-            style="max-width:100%;"
-        />
-    </a>
     <a href="https://david-dm.org/matteobertoldo/atomforce">
         <img
             src="https://david-dm.org/matteobertoldo/atomforce/status.svg"
@@ -26,6 +19,13 @@
         <img
             src="https://img.shields.io/badge/code_of-conduct-ff69b4.svg"
             alt="code of: conduct"
+            style="max-width:100%;"
+        />
+    </a>
+    <a href="https://atom.io/packages/atomforce">
+        <img
+            src="https://img.shields.io/apm/dm/atomforce.svg"
+            alt="Plugin installs"
             style="max-width:100%;"
         />
     </a>

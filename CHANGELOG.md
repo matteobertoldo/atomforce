@@ -1,3 +1,16 @@
+### 0.8.2 - 2019-11-14
+
+### Added
+
+-   New workflow for parse files with `eslint` & `stylelint` on `pull_request` event in Node env.
+-   New package configuration to show or hide the upload percentage when the command: `Upload All Cartridges` is triggered.
+
+### Changed
+
+-   Changed color on status bar icon if the last element uploaded on WebDAV return an error on the server.
+-   In the status change event of the `statusBar` preference, now whenever the user tries to change the preference he is warned if he wants to restart Atom or not.
+-   Updated all `depencies` to the latest version.
+
 ### 0.8.1 - 2019-11-08
 
 ### Changed
