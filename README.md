@@ -57,16 +57,16 @@ apm install atomforce
 
 Atomforce requires a file called `dw.json` in the `root` of your project, which is needed to connect to **WebDAV**. If it is not present, create one. The mandatory fields for the correct connection are shown below.
 
-| Keyword      | Mandatory |        Type         | Description                                                                                                                         |
-| ------------ | :-------: | :-----------------: | ----------------------------------------------------------------------------------------------------------------------------------- |
-| `hostname`   |  `true`   |      `string`       | The Hostname of your sandbox without the `https` protocol. The name must end before `/on/demandware.store/`.                        |
-| `username`   |  `true`   |      `string`       | The username used to access on your Sandbox. The same value of the field that in "Sandbox Istance" is called `login`.               |
-| `password`   |  `true`   |      `string`       | The password used to access on your Sandbox.                                                                                        |
-| `version`    |  `true`   |      `string`       | The version of the code active in your Sandbox. You can check the version in `Administration > Site Development > Code Deployment`. |
-| `root`       |  `false`  |      `string`       | Root option allows for path resolution of the file to upload _relative_ to a directory.                                             |
-| `cartridges` |  `false`  | `string` or `array` | List of cartridges to be uploaded and viewed by the watcher filesystem.                                                             |
-| `p12`        |  `false`  |      `string`       | The path of `p12` file necessary for two-factor authentication.                                                                     |
-| `passphrase` |  `false`  |      `string`       | The keyword necessary for two-factor authentication. If `p12` is set, `passphrase` become **mandatory**.                            |
+| Keyword                     | Mandatory |        Type         | Description                                                                                                                         |
+| --------------------------- | :-------: | :-----------------: | ----------------------------------------------------------------------------------------------------------------------------------- |
+| `hostname`                  |  `true`   |      `string`       | The Hostname of your sandbox without the `https` protocol. The name must end before `/on/demandware.store/`.                        |
+| `username`                  |  `true`   |      `string`       | The username used to access on your Sandbox. The same value of the field that in "Sandbox Istance" is called `login`.               |
+| `password`                  |  `true`   |      `string`       | The password used to access on your Sandbox.                                                                                        |
+| `version` or `code-version` |  `true`   |      `string`       | The version of the code active in your Sandbox. You can check the version in `Administration > Site Development > Code Deployment`. |
+| `root`                      |  `false`  |      `string`       | Root option allows for path resolution of the file to upload _relative_ to a directory.                                             |
+| `cartridges`                |  `false`  | `string` or `array` | List of cartridges to be uploaded and viewed by the watcher filesystem.                                                             |
+| `p12`                       |  `false`  |      `string`       | The path of `p12` file necessary for two-factor authentication.                                                                     |
+| `passphrase`                |  `false`  |      `string`       | The keyword necessary for two-factor authentication. If `p12` is set, `passphrase` become **mandatory**.                            |
 
 A final example of how the file should be structured. <br />
 
