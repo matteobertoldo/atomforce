@@ -1,3 +1,20 @@
+### 0.8.3 - 2019-11-24
+
+### Added
+
+-   Added support for `code-version` key for a shareable `dw.json` in other text editor and IDE like `VS Code`.
+-   Added a new callback notification when the user tries to activate the `Enable Status Bar` command, but the status bar is already active.
+
+### Changed
+
+-   Changed the tab update callback when the `Upload All Cartridges` task returns one or more errors.
+-   Updated most of `devDepencies` to the latest version.
+-   Small code refactoring.
+
+### Fixed
+
+-   Fixed the status bar icon when file `walker` return an `error` callback, and the icon getting a: "in progress" status.
+
 ### 0.8.2 - 2019-11-14
 
 ### Added
@@ -27,7 +44,7 @@
 
 -   Removed keybinding for `"Enable Status Bar"` command.
 
-### 0.8.0 - 2019-10-28
+## 0.8.0 - 2019-10-28
 
 ### Added
 
