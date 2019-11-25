@@ -53,9 +53,13 @@ apm install atomforce
 5.  Enter `atomforce` in the search box and press <kbd>Enter</kbd>
 6.  Click the "Install" button that appears
 
-## dw.json File
+## Configuration
 
-Atomforce requires a file called `dw.json` in the `root` of your project, which is needed to connect to **WebDAV**. If it is not present, create one. The mandatory fields for the correct connection are shown below.
+Atomforce requires a file called `dw.json` in the `root` of your project, which is needed to connect to **WebDAV**. If it is not present, create one.
+
+### dw.json File
+
+The mandatory fields for the correct connection are shown below.
 
 | Keyword                     | Mandatory |        Type         | Description                                                                                                                         |
 | --------------------------- | :-------: | :-----------------: | ----------------------------------------------------------------------------------------------------------------------------------- |
@@ -163,12 +167,7 @@ To improve the development workflow in Salesforce Commerce Colud we recommend in
 
 1.  Latest version of [Atom](https://atom.io) installed.
 2.  Installed Packages:
-    -   [atom-prettier](https://atom.io/packages/prettier-atom) with `ESLint` &amp; `Stylelint` integration enabled.
     -   [editorconfig](https://atom.io/packages/editorconfig)
-    -   [linter](https://atom.io/packages/linter)
-    -   [linter-eslint](https://atom.io/packages/linter-eslint)
-    -   [linter-markdown](https://atom.io/packages/linter-markdown)
-    -   [linter-stylelint](https://atom.io/packages/linter-stylelint)
 
 ### Getting Started
 

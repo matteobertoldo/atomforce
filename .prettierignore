@@ -1,4 +1,4 @@
-LICENSE.md
-node_modules
-package-lock.json
 .github/
+node_modules
+LICENSE.md
+package-lock.json
