@@ -10,7 +10,7 @@
     "jsxBracketSameLine": true,
     "overrides": [
         {
-            "files": "package.json",
+            "files": ["package.json", ".travis.yml"],
             "options": {
                 "tabWidth": 2
             }

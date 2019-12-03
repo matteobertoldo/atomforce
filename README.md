@@ -1,6 +1,6 @@
-<h1>Atomforce</h1>
+<h1 align="center">Atomforce</h1>
 
-<p>
+<p align="center">
     <a href="https://david-dm.org/matteobertoldo/atomforce">
         <img
             src="https://david-dm.org/matteobertoldo/atomforce/status.svg"
@@ -55,22 +55,22 @@ apm install atomforce
 
 ## Configuration
 
-Atomforce requires a file called `dw.json` in the `root` of your project, which is needed to connect to **WebDAV**. If it is not present, create one.
+As required by the standard in the various `npm` Salesforce packages eg: ([`dwupload`](https://www.npmjs.com/package/dwupload#config-file) or [`sgmf-scripts`](https://www.npmjs.com/package/sgmf-scripts)), Atomforce also requires a file named `dw.json` in the `root` of the project, which is needed to enable connection to the **WebDAV**. <br /> In the following indexes you can find most of the examples to be able to upload your files and cartridges to Sandbox correctly.
 
-### dw.json File
+### dw.json
 
-The mandatory fields for the correct connection are shown below.
+The mandatory fieldsfor the correct connection are shown below.
 
-| Keyword                     | Mandatory |        Type         | Description                                                                                                                         |
-| --------------------------- | :-------: | :-----------------: | ----------------------------------------------------------------------------------------------------------------------------------- |
-| `hostname`                  |  `true`   |      `string`       | The Hostname of your sandbox without the `https` protocol. The name must end before `/on/demandware.store/`.                        |
-| `username`                  |  `true`   |      `string`       | The username used to access on your Sandbox. The same value of the field that in "Sandbox Istance" is called `login`.               |
-| `password`                  |  `true`   |      `string`       | The password used to access on your Sandbox.                                                                                        |
-| `version` or `code-version` |  `true`   |      `string`       | The version of the code active in your Sandbox. You can check the version in `Administration > Site Development > Code Deployment`. |
-| `root`                      |  `false`  |      `string`       | Root option allows for path resolution of the file to upload _relative_ to a directory.                                             |
-| `cartridges`                |  `false`  | `string` or `array` | List of cartridges to be uploaded and viewed by the watcher filesystem.                                                             |
-| `p12`                       |  `false`  |      `string`       | The path of `p12` file necessary for two-factor authentication.                                                                     |
-| `passphrase`                |  `false`  |      `string`       | The keyword necessary for two-factor authentication. If `p12` is set, `passphrase` become **mandatory**.                            |
+| Keyword                     | Mandatory |        Type         | Description                                                                                                                                         |
+| --------------------------- | :-------: | :-----------------: | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `hostname`                  |  `true`   |      `string`       | The Hostname of your sandbox without the `https` protocol. The name must end before `/on/demandware.store/`.                                        |
+| `username`                  |  `true`   |      `string`       | The username used to access on your Sandbox. The same value of the field that in "Sandbox Istance" is called `login`.                               |
+| `password`                  |  `true`   |      `string`       | The password used to access on your Sandbox.                                                                                                        |
+| `version` or `code-version` |  `true`   |      `string`       | The version of the code active in your Sandbox. You can check the version in `Administration > Site Development > Code Deployment`.                 |
+| `root`                      |  `false`  |      `string`       | Root option allows for path resolution of the file to upload _relative_ to a directory.                                                             |
+| `cartridges`                |  `false`  | `string` or `array` | List of cartridges to be uploaded and viewed by the watcher filesystem.                                                                             |
+| `p12`                       |  `false`  |      `string`       | The absolute path of `p12` file necessary for two-factor authentication. If `hostname` key contains `cert` initials, this key become **mandatory**. |
+| `passphrase`                |  `false`  |      `string`       | The keyword necessary for two-factor authentication. If `p12` is set, `passphrase` become **mandatory**.                                            |
 
 A final example of how the file should be structured. <br />
 
@@ -166,8 +166,9 @@ To improve the development workflow in Salesforce Commerce Colud we recommend in
 ### Prerequisites
 
 1.  Latest version of [Atom](https://atom.io) installed.
-2.  Installed Packages:
+2.  Recommended Installed Packages:
     -   [editorconfig](https://atom.io/packages/editorconfig)
+    -   [prettier-atom](https://atom.io/packages/prettier-atom) (with `Format Files On Save` enabled)
 
 ### Getting Started
 

@@ -6,6 +6,6 @@ end_of_line = lf
 indent_style = space
 indent_size = 4
 
-[{package.json,package-lock.json}]
+[{package.json,package-lock.json,.travis.yml}]
 indent_style = space
 indent_size = 2

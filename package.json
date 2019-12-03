@@ -4,9 +4,8 @@
   "version": "0.9.0",
   "description": "Salesforce Commerce Cloud (ex Demandware) uploader for Atom. Upload your files and cartridges on SFCC via WebDAV.",
   "keywords": [
-    "atom",
-    "atom-package",
     "salesforce-commerce-cloud",
+    "sfcc",
     "demandware",
     "webdav",
     "cloud",
@@ -74,7 +73,7 @@
     ]
   },
   "scripts": {
-    "format": "prettier --config .prettierrc --write \"./**/*.{less,md,js,json}\"",
+    "format": "prettier --config .prettierrc --write \"./**/*.{less,md,js,json,yml}\"",
     "lint": "npm run lint:js && npm run lint:less && npm run lint:markdown",
     "lint:fix": "npm run lint:js:fix && npm run lint:less:fix",
     "lint:js": "eslint .",
