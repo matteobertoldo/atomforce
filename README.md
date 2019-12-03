@@ -1,10 +1,10 @@
 <h1 align="center">Atomforce</h1>
 
 <p align="center">
-    <a href="https://david-dm.org/matteobertoldo/atomforce">
+    <a href="https://travis-ci.com/matteobertoldo/atomforce">
         <img
-            src="https://david-dm.org/matteobertoldo/atomforce/status.svg"
-            alt="dependencies Status"
+            src="https://travis-ci.com/matteobertoldo/atomforce.svg?branch=master"
+            alt="Build Status"
             style="max-width:100%;"
         />
     </a>
