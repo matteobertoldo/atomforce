@@ -1,10 +1,12 @@
 {
     "env": {
+        "atomtest": true,
         "browser": true,
         "es6": true,
-        "node": true
+        "node": true,
+        "jasmine": true
     },
-    "extends": ["standard", "plugin:react/recommended"],
+    "extends": ["plugin:react/recommended", "plugin:prettier/recommended", "standard"],
     "globals": {
         "atom": true,
         "HTMLElement": true
@@ -20,7 +22,8 @@
         "import/extensions": ["error", "never"],
         "indent": ["error", 4],
         "no-console": "error",
-        "semi": ["error", "always"]
+        "semi": ["error", "always"],
+        "space-before-function-paren": ["error", "never"]
     },
     "settings": {
         "react": {

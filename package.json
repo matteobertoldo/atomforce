@@ -1,12 +1,11 @@
 {
   "name": "atomforce",
   "main": "./lib/atomforce",
-  "version": "0.8.3",
+  "version": "0.9.0",
   "description": "Salesforce Commerce Cloud (ex Demandware) uploader for Atom. Upload your files and cartridges on SFCC via WebDAV.",
   "keywords": [
-    "atom",
-    "atom-package",
     "salesforce-commerce-cloud",
+    "sfcc",
     "demandware",
     "webdav",
     "cloud",
@@ -23,7 +22,8 @@
   "repository": "https://github.com/matteobertoldo/atomforce.git",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+    "atom": ">=1.0.0 <2.0.0",
+    "node": ">=8.0.0"
   },
   "consumedServices": {
     "status-bar": {
@@ -34,13 +34,19 @@
   },
   "devDependencies": {
     "eslint": "^5.16.0",
+    "eslint-config-prettier": "^6.7.0",
     "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^3.1.0",
+    "prettier": "^1.19.1",
+    "remark-cli": "^7.0.1",
+    "remark-lint-no-dead-urls": "^1.0.0",
+    "remark-preset-lint-recommended": "^3.0.3",
     "stylelint": "^12.0.0",
     "stylelint-config-standard": "^19.0.0",
     "stylelint-declaration-use-variable": "^1.7.2"
@@ -57,15 +63,25 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint"
+      "pre-commit": "npm run parse"
     }
   },
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-lint-recommended",
+      "remark-lint-no-dead-urls"
+    ]
+  },
   "scripts": {
-    "lint": "npm run lint:js && npm run lint:less",
+    "format": "prettier --config .prettierrc --write \"./**/*.{less,md,js,json,yml}\"",
+    "lint": "npm run lint:js && npm run lint:less && npm run lint:markdown",
     "lint:fix": "npm run lint:js:fix && npm run lint:less:fix",
     "lint:js": "eslint .",
     "lint:less": "stylelint ./styles",
     "lint:js:fix": "eslint . --fix",
-    "lint:less:fix": "stylelint ./styles --fix"
+    "lint:less:fix": "stylelint ./styles --fix",
+    "lint:markdown": "remark .",
+    "parse": "npm run format && npm run lint",
+    "test": "atom --test spec"
   }
 }
