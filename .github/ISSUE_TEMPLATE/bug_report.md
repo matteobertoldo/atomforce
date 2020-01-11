@@ -24,7 +24,7 @@ A clear and concise description of what you expected to happen.
 If applicable, add screenshots to help explain your problem.
 
 **Desktop (please complete the following information):**
- - OS: [e.g. macOS]
+ - OS: [e.g. macOS/Windows]
  - Atom Version [e.g. 1.x.x x64]
 
 **Additional context**

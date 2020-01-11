@@ -5,28 +5,24 @@
         <img
             src="https://travis-ci.com/matteobertoldo/atomforce.svg?branch=master"
             alt="Build Status"
-            style="max-width:100%;"
         />
     </a>
     <a href="https://spectrum.chat/atomforce">
         <img
             src="https://withspectrum.github.io/badge/badge.svg"
             alt="Join the community on Spectrum"
-            style="max-width:100%;"
         />
     </a>
     <a href="https://github.com/prettier/prettier">
         <img
             src="https://img.shields.io/badge/code_of-conduct-ff69b4.svg"
-            alt="code of: conduct"
-            style="max-width:100%;"
+            alt="Prettier"
         />
     </a>
     <a href="https://atom.io/packages/atomforce">
         <img
-            src="https://img.shields.io/apm/dm/atomforce.svg"
-            alt="Plugin installs"
-            style="max-width:100%;"
+            src="https://img.shields.io/apm/v/atomforce.svg"
+            alt="Package Version"
         />
     </a>
 </p>
@@ -59,18 +55,18 @@ As required by the standard in the various `npm` Salesforce packages eg: ([`dwup
 
 ### dw.json
 
-The mandatory fieldsfor the correct connection are shown below.
+The mandatory fields for the correct connection are shown below.
 
-| Keyword                     | Mandatory |        Type         | Description                                                                                                                                         |
-| --------------------------- | :-------: | :-----------------: | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `hostname`                  |  `true`   |      `string`       | The Hostname of your sandbox without the `https` protocol. The name must end before `/on/demandware.store/`.                                        |
-| `username`                  |  `true`   |      `string`       | The username used to access on your Sandbox. The same value of the field that in "Sandbox Istance" is called `login`.                               |
-| `password`                  |  `true`   |      `string`       | The password used to access on your Sandbox.                                                                                                        |
-| `version` or `code-version` |  `true`   |      `string`       | The version of the code active in your Sandbox. You can check the version in `Administration > Site Development > Code Deployment`.                 |
-| `root`                      |  `false`  |      `string`       | Root option allows for path resolution of the file to upload _relative_ to a directory.                                                             |
-| `cartridges`                |  `false`  | `string` or `array` | List of cartridges to be uploaded and viewed by the watcher filesystem.                                                                             |
-| `p12`                       |  `false`  |      `string`       | The absolute path of `p12` file necessary for two-factor authentication. If `hostname` key contains `cert` initials, this key become **mandatory**. |
-| `passphrase`                |  `false`  |      `string`       | The keyword necessary for two-factor authentication. If `p12` is set, `passphrase` become **mandatory**.                                            |
+| Keyword                     | Mandatory |        Type         | Description                                                                                                                                                                                                                                                                       |
+| --------------------------- | :-------: | :-----------------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `hostname`                  |  `true`   |      `string`       | The Hostname of your sandbox without the `https` protocol. The name must end before `/on/demandware.store/`.                                                                                                                                                                      |
+| `username`                  |  `true`   |      `string`       | The username used to access on your Sandbox. The same value of the field that in "Sandbox Istance" is called `login`. In some sandboxes with the _SFRA_ architecture the username, corresponds to the username used in [`account.demandware.com`](https://account.demandware.com) |
+| `password`                  |  `true`   |      `string`       | The password used to access on your Sandbox. In some sandboxes with the _SFRA_ architecture the password, corresponds to the password used in [`account.demandware.com`](https://account.demandware.com)                                                                          |
+| `version` or `code-version` |  `true`   |      `string`       | The version of the code active in your Sandbox. You can check the version in `Administration > Site Development > Code Deployment`.                                                                                                                                               |
+| `root`                      |  `false`  |      `string`       | Root option allows for path resolution of the file to upload _relative_ to a directory.                                                                                                                                                                                           |
+| `cartridges`                |  `false`  | `string` or `array` | List of cartridges to be uploaded and viewed by the watcher filesystem.                                                                                                                                                                                                           |
+| `p12`                       |  `false`  |      `string`       | The absolute path of `p12` file necessary for two-factor authentication. If `hostname` key contains `cert` initials, this key become **mandatory**.                                                                                                                               |
+| `passphrase`                |  `false`  |      `string`       | The keyword necessary for two-factor authentication. If `p12` is set, `passphrase` become **mandatory**.                                                                                                                                                                          |
 
 A final example of how the file should be structured. <br />
 
@@ -98,12 +94,6 @@ Atomforce supports **2FA** (Two-factor Authentication). <br /> The `p12` key can
     "p12": "absolutepath/to/certificate.p12",
     "passphrase": "keyword"
 }
-```
-
-The `p12` certificate can be built using:
-
-```sh
-openssl pkcs12 -export -in cert.staging.eu01.sample.demandware.net_01.crt -inkey cert.staging.eu01.sample.demandware.net_01.key -out certificate.p12
 ```
 
 ### Root
@@ -155,13 +145,34 @@ By default, if the value of the `cartridges` key is passed as `String` all the c
 
 If you want to upload the entire path defined in the `cartridges` key, just pass the value as an `Array`.
 
+### Cartridges Task
+
+Running the `Upload All Cartridges` task is one of the most important tasks in this extension.
+Read carefully the following problem encountered in some configuration cases with the `dw.json` file.
+
+If the `cartridges` key is not defined in the file or its value is _empty_, the execution of the `Upload All Cartridges` task starts the creation of a `.zip` file in the project root, or in the root defined in the `root` key of the `dw.json` file.
+
+```json
+{
+    "hostname": "dev01-eu01-sample.demandware.net",
+    "username": "username",
+    "password": "mypassword",
+    "version": "version1",
+    "cartridges": [""]
+}
+```
+
+> :warning: If the `Cartridges Task/Clean WebDAV` option is _enabled_ it will result in the entire deletion of files and cartridges in the WebDAV, where most of the time a _small bug_ was encountered, which for a few seconds completely removes the root in the WebDAV causing an unexpected version change of the `code-version` in the Sandbox!
+
+Therefore every time this task is completed and the configurations are identical to those described above, it is good practice to check that the `code-version` (`Administration > Site Development > Code`) is _**still active**_ than the one defined and activated previously. If not, simply re-activate it from your Sandbox. It's hoped that in future releases this problem can be solved.
+
 ## Additionals Packages
 
-To improve the development workflow in Salesforce Commerce Colud we recommend installing the `.isml` &amp; `.ds` syntax.
+To improve the development workflow in Salesforce Commerce Cloud we recommend installing the `.isml` &amp; `.ds` syntax, snippets and autocompletion package.
 
--   [language-demandware](https://atom.io/packages/language-demandware)
+-   [language-sfcc](https://atom.io/packages/language-sfcc)
 
-## Contributing
+## Contributing [![Known Vulnerabilities](https://snyk.io/test/github/matteobertoldo/atomforce/badge.svg?targetFile=package.json)](https://snyk.io/test/github/matteobertoldo/atomforce?targetFile=package.json)
 
 ### Prerequisites
 
@@ -178,7 +189,7 @@ Before cloning the repository, make sure you have [node.js](https://nodejs.org) 
 -   `git clone https://github.com/matteobertoldo/atomforce.git`
 -   `cd atomforce`
 -   `apm install`
--   `atom --dev`
+-   `apm link`
 
 ### Contributing Details
 
