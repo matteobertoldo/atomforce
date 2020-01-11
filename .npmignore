@@ -3,6 +3,5 @@
 .gitignore
 .git/
 .github/
-assets/
 node_modules/
 npm-debug.log

@@ -1,3 +1,25 @@
+## 0.9.0 - 2020-01-11
+
+### Added
+
+-   Added new package config (`Clean WebDAV`) on new section `Cartridges Task` in order to _merge_ and not _replace_ files in the WebDAV.
+
+### Changed
+
+-   Changed `configSchema` for most of options.
+-   Updated most of `devDepencies` to the latest version.
+
+## 0.8.4 - 2019-12-03
+
+### Added
+
+-   Added new `ci` on [TravisCI](https://travis-ci.com/matteobertoldo/atomforce) for Linux environment.
+-   Added new tests for `pre-commit` & `ci`.
+
+### Changed
+
+-   Changed code refactoring with `plugin:prettier/recommended`.
+
 ### 0.8.3 - 2019-11-24
 
 ### Added
@@ -184,7 +206,7 @@
 
 -   Added filesystem watcher ([chokidar](https://github.com/paulmillr/chokidar)).
 -   Added **an ignored list array** configurable in the `Settings View`.
--   Ability to remain in watch or not in the **symlinks** files and folders.
+-   Ability to remain in watch (`fs-watcher`) or not in the **symlinks** files and folders.
 
 ### Know Issue
 
