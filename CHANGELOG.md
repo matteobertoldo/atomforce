@@ -1,3 +1,15 @@
+## 0.10.0 - 2020-01-18
+
+### Added
+
+-   Added a new `config` to show a limited number of files uploaded on WebDAV in the tab panel [#29](https://github.com/matteobertoldo/atomforce/issues/29)
+-   Added a new `command` in tab panel for showing latest 20 files uploaded [#30](https://github.com/matteobertoldo/atomforce/issues/30)
+
+### Changed
+
+-   Updated all `js` files format with latest `eslint-config-standard`.
+-   Updated all of `devDepencies` &amp; `depencies` to the latest version.
+
 ## 0.9.0 - 2020-01-11
 
 ### Added

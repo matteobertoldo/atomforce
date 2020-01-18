@@ -1,34 +1,34 @@
 {
-    "env": {
-        "atomtest": true,
-        "browser": true,
-        "es6": true,
-        "node": true,
-        "jasmine": true
-    },
-    "extends": ["plugin:react/recommended", "plugin:prettier/recommended", "standard"],
-    "globals": {
-        "atom": true,
-        "HTMLElement": true
-    },
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        }
-    },
-    "plugins": ["react"],
-    "rules": {
-        "global-require": "error",
-        "import/extensions": ["error", "never"],
-        "indent": ["error", 4],
-        "no-console": "error",
-        "semi": ["error", "always"],
-        "space-before-function-paren": ["error", "never"]
-    },
-    "settings": {
-        "react": {
-            "pragma": "etch",
-            "version": "latest"
-        }
+  "env": {
+    "atomtest": true,
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jasmine": true
+  },
+  "extends": ["plugin:react/recommended", "plugin:prettier/recommended", "standard"],
+  "globals": {
+    "atom": true,
+    "HTMLElement": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     }
+  },
+  "plugins": ["react"],
+  "rules": {
+    "global-require": "error",
+    "import/extensions": ["error", "never"],
+    "indent": ["error", 4],
+    "no-console": "error",
+    "semi": ["error", "always"],
+    "space-before-function-paren": ["error", "never"]
+  },
+  "settings": {
+    "react": {
+      "pragma": "etch",
+      "version": "latest"
+    }
+  }
 }
