@@ -43,7 +43,7 @@
     "eslint-plugin-react": "^7.18.0",
     "eslint-plugin-standard": "^4.0.1",
     "eslit": "^6.0.0",
-    "husky": "^4.0.10",
+    "husky": "^4.2.1",
     "prettier": "^1.19.1",
     "remark-cli": "^7.0.1",
     "remark-lint-no-dead-urls": "^1.0.1",

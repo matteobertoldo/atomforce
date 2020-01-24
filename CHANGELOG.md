@@ -1,7 +1,8 @@
-## 0.10.0 - 2020-01-20
+## 0.10.0 - 2020-01-24
 
 ### Added
 
+-   Registered Atomforce for `apm` service :rocket:
 -   Added a new `config` to show a limited number of files uploaded on WebDAV in the tab panel [#29](https://github.com/matteobertoldo/atomforce/issues/29)
 -   Added a new `command` in tab panel for showing latest 20 files uploaded [#30](https://github.com/matteobertoldo/atomforce/issues/30)
 
@@ -9,6 +10,10 @@
 
 -   Updated all `js` files format with latest `eslint-config-standard`.
 -   Updated all of `devDepencies` &amp; `depencies` to the latest version.
+
+### Fixed
+
+-   [#33](https://github.com/matteobertoldo/atomforce/issues/33) "Show files size" as action, create a wrong UI.
 
 ## 0.9.0 - 2020-01-11
 
@@ -21,7 +26,7 @@
 -   Changed `configSchema` for most of options.
 -   Updated most of `devDepencies` to the latest version.
 
-## 0.8.4 - 2019-12-03
+### 0.8.4 - 2019-12-03
 
 ### Added
 

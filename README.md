@@ -29,14 +29,6 @@
 
 _Salesforce Commerce Cloud_ (ex Demandware) uploader for Atom. Upload your files and cartridges on SFCC via WebDAV. <br /> Atomforce is a package for [Atom](https://atom.io), that with a simple interface in the Status Bar, helps you upload files and cartridges in your Sandbox.
 
-<p align="center">
-    <img
-      width="800"
-      alt="Atomforce UI"
-      src="https://user-images.githubusercontent.com/15775323/72638476-d0738a80-3963-11ea-92d0-109ffdd9d45d.png"
-    />
-</p>
-
 ## Installation
 
 ### Command Line
@@ -152,26 +144,6 @@ The cartridges option can also be referred to as a string. Ex: `"cartridges": "a
 By default, if the value of the `cartridges` key is passed as `String` all the content (files and folders) of the path passed as a value will be uploaded to the WebDAV, without however creating the path starting from the defined string.
 
 If you want to upload the entire path defined in the `cartridges` key, just pass the value as an `Array`.
-
-### Cartridges Task
-
-> :warning: Running the `Upload All Cartridges` task is one of the most important tasks in this extension. Read carefully the following problem encountered in some configuration cases with the `dw.json` file.
-
-If the `cartridges` key is _not defined_ in the file or its value is _empty_, the execution of the `Upload All Cartridges` task starts the creation of a `.zip` file in the project root, or in the root defined in the `root` key of the `dw.json` file.
-
-```json
-{
-    "hostname": "dev01-eu01-sample.demandware.net",
-    "username": "username",
-    "password": "mypassword",
-    "version": "version1",
-    "cartridges": [""]
-}
-```
-
-If the `Cartridges Task/Clean WebDAV` option is _enabled_ (default option state) it will result in the entire deletion of files and cartridges in the WebDAV, where most of the time a _small bug_ was encountered, which for a few seconds completely removes the root in the WebDAV causing an unexpected version change of the `code-version` in the Sandbox!
-
-Therefore every time this task is completed and the configurations are identical to those described above, it is good practice to check that the `code-version` (`Administration > Site Development > Code`) is _**still active**_ than the one defined and activated previously. If not, simply re-activate it from your Sandbox. It's hoped that in future releases this problem can be solved.
 
 ## Additionals Packages
 
