@@ -1,20 +1,20 @@
 {
-    "extends": "stylelint-config-standard",
-    "max-nesting-depth": [
-        4,
-        {
-            "ignore": ["blockless-at-rules", "pseudo-classes"]
-        }
-    ],
-    "plugins": ["stylelint-declaration-use-variable"],
-    "rules": {
-        "comment-no-empty": true,
-        "indentation": 4,
-        "no-descending-specificity": null,
-        "no-unknown-animations": true,
-        "property-no-vendor-prefix": true,
-        "selector-no-qualifying-type": true,
-        "selector-class-pattern": "^_?[a-z0-9]+(-[a-z0-9]+)*$",
-        "sh-waqar/declaration-use-variable": ["color", "background-color", "border-color"]
+  "extends": "stylelint-config-standard",
+  "max-nesting-depth": [
+    4,
+    {
+      "ignore": ["blockless-at-rules", "pseudo-classes"]
     }
+  ],
+  "plugins": ["stylelint-declaration-use-variable"],
+  "rules": {
+    "comment-no-empty": true,
+    "indentation": 4,
+    "no-descending-specificity": null,
+    "no-unknown-animations": true,
+    "property-no-vendor-prefix": true,
+    "selector-no-qualifying-type": true,
+    "selector-class-pattern": "^_?[a-z0-9]+(-[a-z0-9]+)*$",
+    "sh-waqar/declaration-use-variable": ["color", "background-color", "border-color"]
+  }
 }
