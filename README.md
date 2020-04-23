@@ -170,7 +170,6 @@ To improve the development workflow in Salesforce Commerce Cloud we recommend in
 
 Before cloning the repository, make sure you have [node.js](https://nodejs.org) installed on your OS.
 
--   `cd ~/.atom/packages`
 -   `git clone https://github.com/matteobertoldo/atomforce.git`
 -   `cd atomforce`
 -   `apm install`
