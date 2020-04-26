@@ -1,5 +1,6 @@
+<h3 align="center">Atomƒorce</h3>
 <p align="center">
-    Unofficial <i>Salesforce Commerce Cloud</i>® uploader &amp; manager for Atom.
+    Unofficial <i>Salesforce &trade; Commerce Cloud</i> uploader &amp; manager for Atom.
 </p>
 
 <p align="center">
@@ -29,7 +30,7 @@
     </a>
 </p>
 
-<hr>
+---
 
 ## About
 
@@ -106,7 +107,7 @@ Atomforce supports **2FA** (Two-factor Authentication). <br /> The `p12` key can
 
 Root option allows for path resolution of the file to upload _relative_ to a directory on WebDAV. <br /> To better understand this option, suppose we have the following structure.
 
-```
+```c
 cartridges/
 ├── app_storefront_base/
 ├── plugin_ups/
