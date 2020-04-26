@@ -1,4 +1,6 @@
-<h1 align="center">Atomforce</h1>
+<p align="center">
+    Unofficial <i>Salesforce Commerce Cloud</i>® uploader &amp; manager for Atom.
+</p>
 
 <p align="center">
     <a href="https://travis-ci.com/matteobertoldo/atomforce">
@@ -27,7 +29,11 @@
     </a>
 </p>
 
-_Salesforce Commerce Cloud_ (ex Demandware) uploader for Atom. Upload your files and cartridges on SFCC via WebDAV. <br /> Atomforce is a package for [Atom](https://atom.io), that with a simple interface in the Status Bar, helps you upload files and cartridges in your Sandbox.
+<hr>
+
+## About
+
+Atomforce is a package for [Atom](https://atom.io), that with a simple interface in the Status Bar, helps you upload files and cartridges in your Sandbox. Upload your files and cartridges on _SFCC_ via WebDAV.
 
 ## Installation
 

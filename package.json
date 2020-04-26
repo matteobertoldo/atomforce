@@ -2,7 +2,7 @@
   "name": "atomforce",
   "main": "./lib/atomforce",
   "version": "0.10.0",
-  "description": "Salesforce Commerce Cloud (ex Demandware) uploader for Atom. Upload your files and cartridges on SFCC via WebDAV.",
+  "description": "Salesforce Commerce Cloud uploader for Atom. Upload your files and cartridges on SFCC via WebDAV.",
   "keywords": [
     "salesforce-commerce-cloud",
     "sfcc",
@@ -33,6 +33,7 @@
     }
   },
   "devDependencies": {
+    "commitlint": "^8.3.5",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-standard": "^14.1.1",
@@ -64,6 +65,7 @@
   },
   "husky": {
     "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "npm run parse"
     }
   },
@@ -72,6 +74,13 @@
       "remark-preset-lint-recommended",
       "remark-lint-no-dead-urls"
     ]
+  },
+  "providedServices": {
+    "jsonschema.provider": {
+      "versions": {
+        "1.0.0": "consumeDwJsonSchemaProvider"
+      }
+    }
   },
   "scripts": {
     "format": "prettier --config .prettierrc --write \"./**/*.{less,md,js,json,yml}\"",

@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "type": "object",
+  "description": "Salesforce Commerce Cloud Sandbox configuration file.",
+  "additionalProperties": true,
+  "required": ["hostname", "username", "password", "code-version"],
+  "properties": {
+    "hostname": {
+      "type": "string",
+      "description": "The Hostname of your sandbox without the https protocol. The name must end before /on/demandware.store/",
+      "default": "dev01-shop-storefront.demandware.net",
+      "examples": ["dev01-shop-storefront.demandware.net"]
+    },
+    "username": {
+      "type": "string",
+      "description": "The username used to access on your Sandbox. The same value of the field that in Sandbox Istance is called login. In some sandboxes with the SFRA architecture the username, corresponds to the username used in account.demandware.com",
+      "default": "username",
+      "examples": ["username"]
+    },
+    "password": {
+      "type": "string",
+      "description": "The password used to access on your Sandbox. In some sandboxes with the SFRA architecture the password, corresponds to the password used in account.demandware.com",
+      "default": "*****",
+      "examples": ["*****"]
+    },
+    "root": {
+      "type": "string",
+      "description": "Root option allows for path resolution of the file to upload relative to a directory.",
+      "default": "cartridges",
+      "examples": ["cartridges"]
+    },
+    "cartridges": {
+      "type": "array",
+      "description": "List of cartridges to be uploaded and viewed by the watcher filesystem.",
+      "default": [["app_storefront_base"]],
+      "examples": [["app_storefront_base"]],
+      "additionalItems": true,
+      "items": {
+        "type": "string",
+        "description": "Cartridge name.",
+        "default": "app_storefront_base",
+        "examples": ["app_storefront_base"]
+      }
+    },
+    "code-version": {
+      "type": "string",
+      "description": "The version of the code active in your Sandbox. You can check the version in Administration > Site Development > Code Deployment.",
+      "default": "1.0.0",
+      "examples": ["1.0.0"]
+    },
+    "p12": {
+      "type": "string",
+      "description": "The absolute path of p12 file necessary for two-factor authentication. If hostname key contains cert initials, this key become mandatory.",
+      "default": "path/to/file.p12",
+      "examples": ["path/to/file.p12"]
+    },
+    "passphrase": {
+      "type": "string",
+      "description": "The keyword necessary for two-factor authentication. If p12 is set, passphrase become mandatory.",
+      "default": "keyword",
+      "examples": ["keyword"]
+    }
+  }
+}
