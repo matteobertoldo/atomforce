@@ -1,4 +1,4 @@
-<h3 align="center">Atomƒorce</h3>
+<h3 align="center">:cloud: Atomforce</h3>
 <p align="center">
     Unofficial <i>Salesforce &trade; Commerce Cloud</i> uploader &amp; manager for Atom.
 </p>

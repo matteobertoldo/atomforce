@@ -54,6 +54,7 @@
     "stylelint-declaration-use-variable": "^1.7.2"
   },
   "dependencies": {
+    "atom-package-deps": "^5.1.0",
     "chokidar": "^3.3.1",
     "del": "^5.1.0",
     "etch": "^0.14.0",
@@ -70,18 +71,21 @@
       "pre-commit": "npm run parse"
     }
   },
-  "remarkConfig": {
-    "plugins": [
-      "remark-preset-lint-recommended",
-      "remark-lint-no-dead-urls"
-    ]
-  },
+  "package-deps": [
+    "autocomplete-json"
+  ],
   "providedServices": {
     "jsonschema.provider": {
       "versions": {
         "1.0.0": "consumeDwJsonSchemaProvider"
       }
     }
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-lint-recommended",
+      "remark-lint-no-dead-urls"
+    ]
   },
   "scripts": {
     "format": "prettier --config .prettierrc --write \"./**/*.{less,md,js,json,yml}\"",
