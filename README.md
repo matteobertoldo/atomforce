@@ -65,7 +65,7 @@ As required by the standard in the various `npm` Salesforce packages eg: ([`dwup
 
 In order to create a connection file to the WebDAV it is available with Atomforce, an integrated provider for the autocompletion of the correct properties. Create a new `dw.json` file in the root of your _SFCC_ project in order to auto-complete the file correctly.
 
-![dw json shema](https://user-images.githubusercontent.com/15775323/80415226-855a0380-88d2-11ea-8bfe-1a248aad2997.gif)
+![dw-json-schema](https://user-images.githubusercontent.com/15775323/80418605-fd76f800-88d7-11ea-8e8a-88fa64e861c8.gif)
 
 However, it's possible to consult the attributes of the properties and the _mandatory_ fields for the right connection, here.
 
