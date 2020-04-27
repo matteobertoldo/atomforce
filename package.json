@@ -1,7 +1,7 @@
 {
   "name": "atomforce",
   "main": "./lib/atomforce",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "description": "Salesforce Commerce Cloud uploader for Atom. Upload your files and cartridges on SFCC via WebDAV.",
   "keywords": [
     "salesforce-commerce-cloud",
@@ -55,7 +55,7 @@
   },
   "dependencies": {
     "atom-package-deps": "^5.1.0",
-    "chokidar": "^3.3.1",
+    "chokidar": "^3.4.0",
     "del": "^5.1.0",
     "etch": "^0.14.0",
     "file-url": "^3.0.0",
@@ -72,7 +72,8 @@
     }
   },
   "package-deps": [
-    "autocomplete-json"
+    "autocomplete-json",
+    "language-sfcc"
   ],
   "providedServices": {
     "jsonschema.provider": {

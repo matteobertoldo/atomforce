@@ -1,4 +1,5 @@
 <h3 align="center">:cloud: Atomforce</h3>
+
 <p align="center">
     Unofficial <i>Salesforce &trade; Commerce Cloud</i> uploader &amp; manager for Atom.
 </p>
@@ -62,7 +63,11 @@ As required by the standard in the various `npm` Salesforce packages eg: ([`dwup
 
 ### dw.json
 
-The mandatory fields for the correct connection are shown below.
+In order to create a connection file to the WebDAV it is available with Atomforce, an integrated provider for the autocompletion of the correct properties. Create a new `dw.json` file in the root of your _SFCC_ project in order to auto-complete the file correctly.
+
+![dw json shema](https://user-images.githubusercontent.com/15775323/80415226-855a0380-88d2-11ea-8bfe-1a248aad2997.gif)
+
+However, it's possible to consult the attributes of the properties and The mandatory fields for the right connection, here.
 
 | Keyword                     | Mandatory |        Type         | Description                                                                                                                                                                                                                                                                       |
 | --------------------------- | :-------: | :-----------------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -107,7 +112,7 @@ Atomforce supports **2FA** (Two-factor Authentication). <br /> The `p12` key can
 
 Root option allows for path resolution of the file to upload _relative_ to a directory on WebDAV. <br /> To better understand this option, suppose we have the following structure.
 
-```c
+```
 cartridges/
 ├── app_storefront_base/
 ├── plugin_ups/
