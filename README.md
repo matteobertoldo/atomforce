@@ -67,7 +67,7 @@ In order to create a connection file to the WebDAV it is available with Atomforc
 
 ![dw json shema](https://user-images.githubusercontent.com/15775323/80415226-855a0380-88d2-11ea-8bfe-1a248aad2997.gif)
 
-However, it's possible to consult the attributes of the properties and The mandatory fields for the right connection, here.
+However, it's possible to consult the attributes of the properties and the _mandatory_ fields for the right connection, here.
 
 | Keyword                     | Mandatory |        Type         | Description                                                                                                                                                                                                                                                                       |
 | --------------------------- | :-------: | :-----------------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

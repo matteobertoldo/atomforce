@@ -3,7 +3,7 @@
   "type": "object",
   "description": "Salesforce Commerce Cloud Sandbox configuration file.",
   "additionalProperties": true,
-  "required": ["hostname", "username", "password", "code-version"],
+  "required": ["hostname", "username", "password", "version"],
   "properties": {
     "hostname": {
       "type": "string",
@@ -23,6 +23,18 @@
       "default": "*****",
       "examples": ["*****"]
     },
+    "version": {
+      "type": "string",
+      "description": "The version of the code active in your Sandbox. You can check the version in Administration > Site Development > Code Deployment.",
+      "default": "1.0.0",
+      "examples": ["1.0.0"]
+    },
+    "code-version": {
+      "type": "string",
+      "description": "Alias of the <version> property.",
+      "default": "1.0.0",
+      "examples": ["1.0.0"]
+    },
     "root": {
       "type": "string",
       "description": "Root option allows for path resolution of the file to upload relative to a directory.",
@@ -41,12 +53,6 @@
         "default": "app_storefront_base",
         "examples": ["app_storefront_base"]
       }
-    },
-    "code-version": {
-      "type": "string",
-      "description": "The version of the code active in your Sandbox. You can check the version in Administration > Site Development > Code Deployment.",
-      "default": "1.0.0",
-      "examples": ["1.0.0"]
     },
     "p12": {
       "type": "string",
