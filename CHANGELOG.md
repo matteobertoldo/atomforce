@@ -1,24 +1,18 @@
 # Changelog
 
-## [Unreleased](https://github.com/matteobertoldo/atomforce/tree/HEAD)
-
-[Full Changelog](https://github.com/matteobertoldo/atomforce/compare/v0.11.0...HEAD)
-
-**Implemented enhancements:**
-
-- Add new provider for dw.json file [\#35](https://github.com/matteobertoldo/atomforce/issues/35)
-
-## [v0.11.0](https://github.com/matteobertoldo/atomforce/tree/v0.11.0) (2020-04-27)
+## [v0.11.0](https://github.com/matteobertoldo/atomforce/tree/v0.11.0) (2020-04-28)
 
 [Full Changelog](https://github.com/matteobertoldo/atomforce/compare/v0.10.0...v0.11.0)
 
 **Implemented enhancements:**
 
+- Add new provider for dw.json file [\#35](https://github.com/matteobertoldo/atomforce/issues/35)
 - \[TAB\] add command for “show latest 20 files” [\#30](https://github.com/matteobertoldo/atomforce/issues/30)
 - \[TAB\] config to show a limited number of files in the tab [\#29](https://github.com/matteobertoldo/atomforce/issues/29)
 
 **Merged pull requests:**
 
+- New changelog from v0.10.0 for apm service [\#38](https://github.com/matteobertoldo/atomforce/pull/38) ([matteobertoldo](https://github.com/matteobertoldo))
 - Add new provider for dw.json file \#35 [\#37](https://github.com/matteobertoldo/atomforce/pull/37) ([matteobertoldo](https://github.com/matteobertoldo))
 
 ## [v0.10.0](https://github.com/matteobertoldo/atomforce/tree/v0.10.0) (2020-01-24)
