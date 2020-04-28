@@ -89,6 +89,7 @@
     ]
   },
   "scripts": {
+    "changelog": "github_changelog_generator -u matteobertoldo -p atomforce",
     "format": "prettier --config .prettierrc --write \"./**/*.{less,md,js,json,yml}\"",
     "lint": "npm run lint:js && npm run lint:less && npm run lint:markdown",
     "lint:fix": "npm run lint:js:fix && npm run lint:less:fix",

@@ -1,237 +1,74 @@
-## 0.10.0 - 2020-01-24
+# Changelog
 
-### Added
+## [Unreleased](https://github.com/matteobertoldo/atomforce/tree/HEAD)
 
--   Registered Atomforce for `apm` service :rocket:
--   Added a new `config` to show a limited number of files uploaded on WebDAV in the tab panel [#29](https://github.com/matteobertoldo/atomforce/issues/29)
--   Added a new `command` in tab panel for showing latest 20 files uploaded [#30](https://github.com/matteobertoldo/atomforce/issues/30)
+[Full Changelog](https://github.com/matteobertoldo/atomforce/compare/v0.11.0...HEAD)
 
-### Changed
+**Implemented enhancements:**
 
--   Updated all `js` files format with latest `eslint-config-standard`.
--   Updated all of `devDepencies` &amp; `depencies` to the latest version.
+- Add new provider for dw.json file [\#35](https://github.com/matteobertoldo/atomforce/issues/35)
 
-### Fixed
+## [v0.11.0](https://github.com/matteobertoldo/atomforce/tree/v0.11.0) (2020-04-27)
 
--   [#33](https://github.com/matteobertoldo/atomforce/issues/33) "Show files size" as action, create a wrong UI.
+[Full Changelog](https://github.com/matteobertoldo/atomforce/compare/v0.10.0...v0.11.0)
 
-## 0.9.0 - 2020-01-11
+**Implemented enhancements:**
 
-### Added
+- \[TAB\] add command for “show latest 20 files” [\#30](https://github.com/matteobertoldo/atomforce/issues/30)
+- \[TAB\] config to show a limited number of files in the tab [\#29](https://github.com/matteobertoldo/atomforce/issues/29)
 
--   Added new package config (`Clean WebDAV`) on new section `Cartridges Task` in order to _merge_ and not _replace_ files in the WebDAV.
+**Merged pull requests:**
 
-### Changed
+- Add new provider for dw.json file \#35 [\#37](https://github.com/matteobertoldo/atomforce/pull/37) ([matteobertoldo](https://github.com/matteobertoldo))
 
--   Changed `configSchema` for most of options.
--   Updated most of `devDepencies` to the latest version.
+## [v0.10.0](https://github.com/matteobertoldo/atomforce/tree/v0.10.0) (2020-01-24)
 
-### 0.8.4 - 2019-12-03
+[Full Changelog](https://github.com/matteobertoldo/atomforce/compare/89bfd51d2c358f663a180a7480e386db2c926d08...v0.10.0)
 
-### Added
+**Implemented enhancements:**
 
--   Added new `ci` on [TravisCI](https://travis-ci.com/matteobertoldo/atomforce) for Linux environment.
--   Added new tests for `pre-commit` & `ci`.
+- \[CARTRIDGES\] config for delete all files remotely on WebDAV [\#28](https://github.com/matteobertoldo/atomforce/issues/28)
+- \[REFACTOR\] Add a new npm task formatter, for CI & pre-commit [\#27](https://github.com/matteobertoldo/atomforce/issues/27)
+- Add support for the "code-version" key in the "dw.json" file [\#25](https://github.com/matteobertoldo/atomforce/issues/25)
+- \[CARTRIDGES\] Add progress percentage in the status bar [\#23](https://github.com/matteobertoldo/atomforce/issues/23)
+- Add a visual progress to the progress bar on popover component [\#16](https://github.com/matteobertoldo/atomforce/issues/16)
+- Add eslint plugin:react/recommended  [\#12](https://github.com/matteobertoldo/atomforce/issues/12)
+- fix: \#33 "Show files size" as action, create a wrong UI [\#34](https://github.com/matteobertoldo/atomforce/pull/34) ([matteobertoldo](https://github.com/matteobertoldo))
+- \#25 Add support for the "code-version" key in the "dw.json" file [\#26](https://github.com/matteobertoldo/atomforce/pull/26) ([matteobertoldo](https://github.com/matteobertoldo))
 
-### Changed
+**Fixed bugs:**
 
--   Changed code refactoring with `plugin:prettier/recommended`.
+- "Show files size" as action, create a wrong UI [\#33](https://github.com/matteobertoldo/atomforce/issues/33)
 
-### 0.8.3 - 2019-11-24
+**Closed issues:**
 
-### Added
+- \[REFACTOR\] Update keybindings on multi-platforms [\#21](https://github.com/matteobertoldo/atomforce/issues/21)
+- Add new UI for the tab [\#18](https://github.com/matteobertoldo/atomforce/issues/18)
 
--   Added support for `code-version` key for a shareable `dw.json` in other text editor and IDE like `VS Code`.
--   Added a new callback notification when the user tries to activate the `Enable Status Bar` command, but the status bar is already active.
+**Merged pull requests:**
 
-### Changed
+- \#28 \[CARTRIDGES\] config for delete all files remotely on WebDAV [\#32](https://github.com/matteobertoldo/atomforce/pull/32) ([matteobertoldo](https://github.com/matteobertoldo))
+- \#27 \[REFACTOR\] Add a new npm task formatter, for CI & pre-commit [\#31](https://github.com/matteobertoldo/atomforce/pull/31) ([matteobertoldo](https://github.com/matteobertoldo))
+- \#23 \[CARTRIDGES\] Add progress percentage in the status bar [\#24](https://github.com/matteobertoldo/atomforce/pull/24) ([matteobertoldo](https://github.com/matteobertoldo))
+- \#21 \[REFACTOR\] Update keybindings on multi-platforms [\#22](https://github.com/matteobertoldo/atomforce/pull/22) ([matteobertoldo](https://github.com/matteobertoldo))
+- \#18 Add new UI for the tab [\#20](https://github.com/matteobertoldo/atomforce/pull/20) ([matteobertoldo](https://github.com/matteobertoldo))
+- \#18 Add new UI for the tab [\#19](https://github.com/matteobertoldo/atomforce/pull/19) ([matteobertoldo](https://github.com/matteobertoldo))
+- \#16 Add a visual progress to the progress bar on popover component [\#17](https://github.com/matteobertoldo/atomforce/pull/17) ([matteobertoldo](https://github.com/matteobertoldo))
+- Feature/matteobertoldo/refactor [\#15](https://github.com/matteobertoldo/atomforce/pull/15) ([matteobertoldo](https://github.com/matteobertoldo))
+- \#12 Add eslint plugin:react/recommended [\#14](https://github.com/matteobertoldo/atomforce/pull/14) ([matteobertoldo](https://github.com/matteobertoldo))
+- \#12 Add eslint plugin:react/recommended [\#13](https://github.com/matteobertoldo/atomforce/pull/13) ([matteobertoldo](https://github.com/matteobertoldo))
+-  Added build status for dependencies in package.json [\#11](https://github.com/matteobertoldo/atomforce/pull/11) ([matteobertoldo](https://github.com/matteobertoldo))
+- Added new husky’s pre-commit hook [\#10](https://github.com/matteobertoldo/atomforce/pull/10) ([matteobertoldo](https://github.com/matteobertoldo))
+- Removed “lodash” as depencies [\#9](https://github.com/matteobertoldo/atomforce/pull/9) ([matteobertoldo](https://github.com/matteobertoldo))
+- Feature/matteobertoldo/tab [\#8](https://github.com/matteobertoldo/atomforce/pull/8) ([matteobertoldo](https://github.com/matteobertoldo))
+- New “Upload All Cartridges” task [\#7](https://github.com/matteobertoldo/atomforce/pull/7) ([matteobertoldo](https://github.com/matteobertoldo))
+- Feature/matteobertoldo/dwdav [\#6](https://github.com/matteobertoldo/atomforce/pull/6) ([matteobertoldo](https://github.com/matteobertoldo))
+- Added \*put\* & \*delete\* methods [\#5](https://github.com/matteobertoldo/atomforce/pull/5) ([matteobertoldo](https://github.com/matteobertoldo))
+- Feature/matteobertoldo/fs watcher [\#4](https://github.com/matteobertoldo/atomforce/pull/4) ([matteobertoldo](https://github.com/matteobertoldo))
+- Feature/matteobertoldo/fs watcher [\#3](https://github.com/matteobertoldo/atomforce/pull/3) ([matteobertoldo](https://github.com/matteobertoldo))
+- Added filesystem watcher [\#2](https://github.com/matteobertoldo/atomforce/pull/2) ([matteobertoldo](https://github.com/matteobertoldo))
+- Fix LICENSE.md link file [\#1](https://github.com/matteobertoldo/atomforce/pull/1) ([matteobertoldo](https://github.com/matteobertoldo))
 
--   Changed the tab update callback when the `Upload All Cartridges` task returns one or more errors.
--   Updated most of `devDepencies` to the latest version.
--   Small code refactoring.
 
-### Fixed
 
--   Fixed the status bar icon when file `walker` return an `error` callback, and the icon getting a: "in progress" status.
-
-### 0.8.2 - 2019-11-14
-
-### Added
-
--   New workflow for parse files with `eslint` & `stylelint` on `pull_request` event in Node env.
--   New package configuration to show or hide the upload percentage when the command: `Upload All Cartridges` is triggered.
-
-### Changed
-
--   Changed color on status bar icon if the last element uploaded on WebDAV return an error on the server.
--   In the status change event of the `statusBar` preference, now whenever the user tries to change the preference he is warned if he wants to restart Atom or not.
--   Updated all `depencies` to the latest version.
-
-### 0.8.1 - 2019-11-08
-
-### Changed
-
--   Changed Keybindings on multi-platforms. Now it's possible to enable the `tab` by typing the native commands according to the operating system.
--   Small refactoring on the addition of `disposables` events in Atom. Now all the features of Atomforce are added to a single subscription.
-
-### Fixed
-
--   Fixed a graphic error displaying the "warning" icon when a directory was deleted locally, but an error on the server returned from WebDAV.
--   Fixed the Atomforce Tab removal event, once clicked on "Disable" from the installed packages settings.
-
-### Removed
-
--   Removed keybinding for `"Enable Status Bar"` command.
-
-## 0.8.0 - 2019-10-28
-
-### Added
-
--   New _ui_ for `tab` area and new file component for `etch JSX DOM`.
--   New list for files Uploaded on WebDAV with a new icons to highlights the events triggered via filesystem watcher.
--   New mini actions, with Electron API for file list view, as "Show file size".
--   New activity status on status bar.
--   New badge for [`spectrum`](https://spectrum.chat) chat.
-
-### Changed
-
--   Changed "Upload all cartridges" callback. Now when all the cartridges have been loaded, the filesystem watcher is kept active automatically, without re-enabling it later.
--   Updated most of `devDepencies` & `depencies` to the latest version.
-
-### Fixed
-
--   Fixed a bug that allowed you to upload files and cartridges equally, even without hanging the status bar (if in the preferences of the package it is set to `false` for `Status Bar` setting).
-
-### 0.7.4 - 2019-09-16
-
-### Changed
-
--   Added new progress _ui_ indication for `Upload All Cartridges` task.
--   Added "Getting Started" section for contributing guidelines.
--   Updated `CODE_OF_CONDUCT.md` file with remark-lint.
--   Minor fixes on styles.
-
-### 0.7.3 - 2019-08-26
-
-### Changed
-
--   Changed `.eslintrc` file extension with the [recommended](https://eslint.org/docs/user-guide/configuring#configuration-file-formats) `json` format.
--   Added new `eslint plugin:react/recommended` for write correct `jsx` syntax.
--   Updated all `depencies` to the latest version.
--   Minor fixes on styles.
-
-### 0.7.2 - 2019-04-07
-
-### Changed
-
--   Changed "Upload All Cartridges" task with new queue function with `Array.prototype.reduce()`.
--   Changed the `atomforce.less` file with all styles to improve performance.
--   Updated all the `devDepencies` & `depencies` to the latest version.
-
-### Fixed
-
--   Fixed editorconfig warnings.
-
-### Removed
-
--   Removed `p-queue` as depencies.
--   Removed `log` option on filesystem events in package settings.
-
-### Added
-
--   New `husky's` hook for parse all files before committing.
-
-### 0.7.1 - 2019-03-18
-
-### Changed
-
--   Updated all the `devDepencies` & `depencies` to the latest version.
--   Modified the `DWDAV` class without the lodash `_.extend` method and replaced with the default `Object.assign` javascript method
-
-### Removed
-
--   Removed `lodash` as depencies.
-
-## 0.7.0 - 2019-02-22
-
-### Added
-
--   New tab for showing file and cartridges uploaded on WebDAV.
-
-### Changed
-
--   Modified the folder tree and create folders for component types.
--   New code style with [prettier](https://github.com/prettier/prettier)
-
-### Fixed
-
--   Fixed a watch state bug in the switcher label after authentication in WebDAV and starting the cartridges task.
--   Fixed a bug that did not allow the watcher filesystem to be properly enabled/disabled via the Atomforce menu command, after the WebDAV authorization failed.
-
-## 0.6.0 - 2019-02-19
-
-### Added
-
--   New command "Upload All Cartridges" on menu.
--   New popover info for "Cartridges" mode.
--   New stream `zip` interface task.
--   New "Follow Dots" option on package settings.
--   Added a new utilities for the filesystem watcher.
-
-### Changed
-
--   New changelog format from [keep-a-changelog](https://github.com/olivierlacan/keep-a-changelog).
--   Filter and updated some values on **ignored list array**.
--   Changed the checked status in the Atomforce status bar to `false`, when user failed the authentication on WebDAV.
-
-### Fixed
-
--   Fixed a random Atom crash if you trying to quickly enable the filesystem watcher.
-
-## 0.5.0 - 2018-12-24
-
-### Added
-
--   New activation commands to enable or disable the watcher filesystem: `atomforce:watch`, `atomforce:disablewatch`.
--   New color management of the status bar.
-
-## 0.4.0 - 2018-12-13
-
-### Added
-
--   Added _put_ & _delete_ methods for upload file on WebDAV.
--   Added new `boolean` configuration that allows to display a `cosole.log` of all file events (addition, modification or deletion).
--   Now in the `dw.json` file in the `cartridges` key you can insert arrays or strings.
--   Added `root` option in `dw.json` file.
-
-### 0.3.5 - 2018-12-09
-
-### Fixed
-
--   Fixed a bug that created multiple filesystem watchers even if you tried to completely disable the package via `Settings View`.
-
-## 0.3.0 - 2018-12-07
-
-### Added
-
--   Added authentication for the Sandbox (`DWDAV`) with return of the hostname in the status bar tooltip.
--   Modal addition of error in case of non authorization and disabling of events on files.
-
-## 0.2.0 - 2018-12-03
-
-### Added
-
--   Added filesystem watcher ([chokidar](https://github.com/paulmillr/chokidar)).
--   Added **an ignored list array** configurable in the `Settings View`.
--   Ability to remain in watch (`fs-watcher`) or not in the **symlinks** files and folders.
-
-### Know Issue
-
--   Currently `chokidar` creates a rebuid error in `macOS`.
-
-## 0.1.0 - 2018-11-22
-
-### Added
-
--   Welcome **Atomforce**!
--   Atomforce can now intercept if the `dw.json` file exists in the project root, validate the file with the keys and values required for the connection and check if there is only one project connected.
+\* *This Changelog was automatically generated by [github_changelog_generator](https://github.com/github-changelog-generator/github-changelog-generator)*
