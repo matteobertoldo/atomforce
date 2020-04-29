@@ -1,5 +1,13 @@
 # Changelog
 
+## [v0.11.1](https://github.com/matteobertoldo/atomforce/tree/v0.11.1) (2020-04-29)
+
+[Full Changelog](https://github.com/matteobertoldo/atomforce/compare/v0.11.0...v0.11.1)
+
+**Fixed bugs:**
+
+- FS watcher "undefined" root properties [\#41](https://github.com/matteobertoldo/atomforce/pull/41) ([matteobertoldo](https://github.com/matteobertoldo))
+
 ## [v0.11.0](https://github.com/matteobertoldo/atomforce/tree/v0.11.0) (2020-04-28)
 
 [Full Changelog](https://github.com/matteobertoldo/atomforce/compare/v0.10.0...v0.11.0)
@@ -12,6 +20,7 @@
 
 **Merged pull requests:**
 
+- New changelog from v0.10.0 for apm service [\#39](https://github.com/matteobertoldo/atomforce/pull/39) ([matteobertoldo](https://github.com/matteobertoldo))
 - New changelog from v0.10.0 for apm service [\#38](https://github.com/matteobertoldo/atomforce/pull/38) ([matteobertoldo](https://github.com/matteobertoldo))
 - Add new provider for dw.json file \#35 [\#37](https://github.com/matteobertoldo/atomforce/pull/37) ([matteobertoldo](https://github.com/matteobertoldo))
 
