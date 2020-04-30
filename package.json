@@ -46,6 +46,7 @@
     "eslint-plugin-standard": "^4.0.1",
     "eslit": "^6.0.0",
     "husky": "^4.2.5",
+    "lint-staged": "^10.2.1",
     "prettier": "^2.0.5",
     "remark-cli": "^8.0.0",
     "remark-lint-no-dead-urls": "^1.0.2",
@@ -69,7 +70,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "npm run parse"
+      "pre-commit": "lint-staged"
     }
   },
   "package-deps": [
@@ -101,5 +102,9 @@
     "lint:markdown": "remark .",
     "parse": "npm run format && npm run lint",
     "test": "atom --test spec"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix",
+    "*.less": "stylelint --fix"
   }
 }
