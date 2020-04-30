@@ -105,6 +105,8 @@
   },
   "lint-staged": {
     "*.js": "eslint --fix",
-    "*.less": "stylelint --fix"
+    "*.less": "stylelint --fix",
+    "*.md": "remark .",
+    "*.{json,yml}": "prettier --write"
   }
 }
