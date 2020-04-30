@@ -1,5 +1,5 @@
 language: node_js
-node_js: '10.13.0'
+node_js: '14.1.0'
 os: linux
 
 env:
@@ -17,6 +17,7 @@ addons:
       - libsecret-1-dev
 
 before_script:
+  - nvm use
   - npm install
   - npm run parse
 
