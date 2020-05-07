@@ -1,7 +1,0 @@
-.DS_Store
-.gitattributes
-.gitignore
-.git/
-.github/
-node_modules/
-npm-debug.log
