@@ -23,13 +23,13 @@
       "default": "*****",
       "examples": ["*****"]
     },
-    "version": {
+    "code-version": {
       "type": "string",
       "description": "The version of the code active in your Sandbox. You can check the version in Administration > Site Development > Code Deployment.",
       "default": "1.0.0",
       "examples": ["1.0.0"]
     },
-    "code-version": {
+    "version": {
       "type": "string",
       "description": "Alias of the <version> property.",
       "default": "1.0.0",

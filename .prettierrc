@@ -4,15 +4,15 @@
   "printWidth": 120,
   "singleQuote": true,
   "semi": true,
-  "tabWidth": 4,
+  "tabWidth": 2,
   "trailingComma": "none",
   "useTabs": false,
   "jsxBracketSameLine": true,
   "overrides": [
     {
-      "files": ["*.json", ".prettierrc", ".tern-project", ".travis.yml"],
+      "files": ["*.md"],
       "options": {
-        "tabWidth": 2
+        "tabWidth": 4
       }
     }
   ]

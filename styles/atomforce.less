@@ -3,408 +3,408 @@
 @cubic-bezier: cubic-bezier(0.2, 1, 0.3, 1);
 
 @keyframes statusbar-up {
-    0% {
-        transform: translate3d(0, 40%, 0);
-    }
+  0% {
+    transform: translate3d(0, 40%, 0);
+  }
 
-    100% {
-        transform: translate3d(0, -20%, 0);
-    }
+  100% {
+    transform: translate3d(0, -20%, 0);
+  }
 }
 
 @keyframes statusbar-fade {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    25%,
-    85% {
-        opacity: 1;
-    }
+  25%,
+  85% {
+    opacity: 1;
+  }
 
-    100% {
-        opacity: 0;
-    }
+  100% {
+    opacity: 0;
+  }
 }
 
 .atomforce-status-bar {
-    .status-bar & {
-        .icon {
-            display: inline-block;
-            min-width: 16px;
-            text-align: center;
-
-            &::before {
-                margin-right: 0;
-            }
-        }
-    }
-
+  .status-bar & {
     .icon {
-        display: inline-block;
-        min-width: 16px;
-        text-align: center;
+      display: inline-block;
+      min-width: 16px;
+      text-align: center;
 
-        &::before {
-            margin-right: 0;
-        }
+      &::before {
+        margin-right: 0;
+      }
     }
+  }
 
-    .atomforce-progress-percentage {
-        margin-left: @component-icon-padding;
-    }
+  .icon {
+    display: inline-block;
+    min-width: 16px;
+    text-align: center;
 
-    &.connected {
-        .icon {
-            color: @text-color-info;
-        }
+    &::before {
+      margin-right: 0;
     }
+  }
 
-    &.uploading {
-        .icon::before {
-            animation: statusbar-up 0.8s ease-out infinite, statusbar-fade 0.8s ease-out infinite;
-        }
-    }
+  .atomforce-progress-percentage {
+    margin-left: @component-icon-padding;
+  }
 
-    &.error {
-        .icon {
-            color: @text-color-error;
-        }
+  &.connected {
+    .icon {
+      color: @text-color-info;
     }
+  }
+
+  &.uploading {
+    .icon::before {
+      animation: statusbar-up 0.8s ease-out infinite, statusbar-fade 0.8s ease-out infinite;
+    }
+  }
+
+  &.error {
+    .icon {
+      color: @text-color-error;
+    }
+  }
 }
 
 .atomforce-tooltip {
-    user-select: none;
+  user-select: none;
 
-    &.tooltip {
-        box-sizing: border-box;
-        width: 355px;
-        padding-left: @component-padding;
-        padding-right: @component-padding;
-    }
+  &.tooltip {
+    box-sizing: border-box;
+    width: 355px;
+    padding-left: @component-padding;
+    padding-right: @component-padding;
+  }
 
-    &.top .tooltip-arrow.tooltip-arrow {
-        width: @component-padding;
-        height: @component-padding;
-        border-width: 0 0 1px 1px;
-        border-color: @base-border-color;
-        background-color: @tool-panel-background-color;
-        border-bottom-right-radius: 2px;
-        transform: rotate(-45deg);
-    }
+  &.top .tooltip-arrow.tooltip-arrow {
+    width: @component-padding;
+    height: @component-padding;
+    border-width: 0 0 1px 1px;
+    border-color: @base-border-color;
+    background-color: @tool-panel-background-color;
+    border-bottom-right-radius: 2px;
+    transform: rotate(-45deg);
+  }
 
-    .tooltip-inner.tooltip-inner {
-        background-color: @tool-panel-background-color;
-        color: @text-color;
-        border: 1px solid @base-border-color;
-        box-shadow: 0 4px 8px hsla(0, 0, 0, 0.1);
-        padding: 0;
-        white-space: normal;
-        overflow-y: auto;
-    }
+  .tooltip-inner.tooltip-inner {
+    background-color: @tool-panel-background-color;
+    color: @text-color;
+    border: 1px solid @base-border-color;
+    box-shadow: 0 4px 8px hsla(0, 0, 0, 0.1);
+    padding: 0;
+    white-space: normal;
+    overflow-y: auto;
+  }
 }
 
 .atomforce-popover-header {
+  display: flex;
+  align-items: center;
+  font-size: @font-size;
+  padding-left: @component-padding;
+  padding-right: @component-padding;
+
+  .atomforce-icon-cloud {
     display: flex;
     align-items: center;
-    font-size: @font-size;
-    padding-left: @component-padding;
-    padding-right: @component-padding;
+    flex: 1 0 auto;
 
-    .atomforce-icon-cloud {
-        display: flex;
-        align-items: center;
-        flex: 1 0 auto;
-
-        .input-label {
-            cursor: default;
-        }
+    .input-label {
+      cursor: default;
     }
+  }
 
-    .icon-cloud {
-        width: 28px;
-        height: 28px;
-        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjAuMiwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxpdmVsbG9fMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iMCAwIDI4IDI4IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyOCAyODsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiMwMEExRTA7fQoJLnN0MXtmaWxsOiNGRkZGRkY7fQo8L3N0eWxlPgo8Zz4KCTxjaXJjbGUgY2xhc3M9InN0MCIgY3g9IjE0IiBjeT0iMTQiIHI9IjE0Ii8+CjwvZz4KPHBhdGggY2xhc3M9InN0MSIgZD0iTTEyLjMsOS4xQzEzLDguNSwxMy45LDgsMTQuOSw4YzEuMywwLDIuNSwwLjcsMy4xLDEuOGMwLjUtMC4yLDEuMS0wLjQsMS43LTAuNGMyLjQsMCw0LjMsMS45LDQuMyw0LjMKCXMtMS45LDQuMy00LjMsNC4zYy0wLjMsMC0wLjYsMC0wLjktMC4xYy0wLjUsMS0xLjYsMS42LTIuOCwxLjZjLTAuNSwwLTEtMC4xLTEuNC0wLjNjLTAuNSwxLjMtMS44LDIuMi0zLjMsMi4yCgljLTEuNSwwLTIuOS0xLTMuNC0yLjRjLTAuMiwwLTAuNSwwLjEtMC43LDAuMWMtMS44LDAtMy4zLTEuNS0zLjMtMy40YzAtMS4zLDAuNy0yLjMsMS43LTIuOWMtMC4yLTAuNS0wLjMtMS0wLjMtMS41CgljMC0yLjEsMS43LTMuOSwzLjktMy45QzEwLjUsNy42LDExLjYsOC4yLDEyLjMsOS4xIi8+Cjwvc3ZnPgo=');
-        background-repeat: no-repeat;
-        background-size: 28px 28px;
-        background-color: @background-color-highlight;
-        border-radius: 50%;
-        margin: 5px 5px 5px 0;
-    }
+  .icon-cloud {
+    width: 28px;
+    height: 28px;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjAuMiwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxpdmVsbG9fMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iMCAwIDI4IDI4IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyOCAyODsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiMwMEExRTA7fQoJLnN0MXtmaWxsOiNGRkZGRkY7fQo8L3N0eWxlPgo8Zz4KCTxjaXJjbGUgY2xhc3M9InN0MCIgY3g9IjE0IiBjeT0iMTQiIHI9IjE0Ii8+CjwvZz4KPHBhdGggY2xhc3M9InN0MSIgZD0iTTEyLjMsOS4xQzEzLDguNSwxMy45LDgsMTQuOSw4YzEuMywwLDIuNSwwLjcsMy4xLDEuOGMwLjUtMC4yLDEuMS0wLjQsMS43LTAuNGMyLjQsMCw0LjMsMS45LDQuMyw0LjMKCXMtMS45LDQuMy00LjMsNC4zYy0wLjMsMC0wLjYsMC0wLjktMC4xYy0wLjUsMS0xLjYsMS42LTIuOCwxLjZjLTAuNSwwLTEtMC4xLTEuNC0wLjNjLTAuNSwxLjMtMS44LDIuMi0zLjMsMi4yCgljLTEuNSwwLTIuOS0xLTMuNC0yLjRjLTAuMiwwLTAuNSwwLjEtMC43LDAuMWMtMS44LDAtMy4zLTEuNS0zLjMtMy40YzAtMS4zLDAuNy0yLjMsMS43LTIuOWMtMC4yLTAuNS0wLjMtMS0wLjMtMS41CgljMC0yLjEsMS43LTMuOSwzLjktMy45QzEwLjUsNy42LDExLjYsOC4yLDEyLjMsOS4xIi8+Cjwvc3ZnPgo=');
+    background-repeat: no-repeat;
+    background-size: 28px 28px;
+    background-color: @background-color-highlight;
+    border-radius: 50%;
+    margin: 5px 5px 5px 0;
+  }
 
-    .watch-state {
-        font-weight: normal;
-        border-radius: @component-border-radius;
-        margin-left: -0.156rem;
-        padding: 1px 4px;
-        transition: background-color 0.45s @cubic-bezier, color 0.45s @cubic-bezier;
-    }
+  .watch-state {
+    font-weight: normal;
+    border-radius: @component-border-radius;
+    margin-left: -0.156rem;
+    padding: 1px 4px;
+    transition: background-color 0.45s @cubic-bezier, color 0.45s @cubic-bezier;
+  }
 
-    .input-toggle {
-        margin-right: 0;
-    }
+  .input-toggle {
+    margin-right: 0;
+  }
 }
 
 .atomforce-popover-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 65px;
-    border-top: 1px solid @base-border-color;
-    padding: @component-padding;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 65px;
+  border-top: 1px solid @base-border-color;
+  padding: @component-padding;
 
-    .info {
-        flex: 1 0 auto;
-        max-width: 260px;
-        font-size: @font-size - 1px;
-        line-height: 1.45;
-        color: @text-color-subtle;
-        margin: 0 auto;
-        cursor: default;
+  .info {
+    flex: 1 0 auto;
+    max-width: 260px;
+    font-size: @font-size - 1px;
+    line-height: 1.45;
+    color: @text-color-subtle;
+    margin: 0 auto;
+    cursor: default;
 
-        &.fit-content {
-            max-width: 285px;
-        }
+    &.fit-content {
+      max-width: 285px;
     }
+  }
 
-    .btn {
-        margin-top: 10px;
+  .btn {
+    margin-top: 10px;
+  }
+
+  .underline {
+    background-color: transparent;
+    color: @text-color-highlight;
+    box-shadow: none;
+    border: 0;
+    padding: 0;
+    text-decoration: underline;
+  }
+
+  .hostname {
+    display: inline-block;
+    font-weight: normal;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    transition: background-color 0.65s @cubic-bezier;
+
+    &:active {
+      background-color: @background-color-selected;
     }
+  }
 
-    .underline {
-        background-color: transparent;
-        color: @text-color-highlight;
-        box-shadow: none;
-        border: 0;
-        padding: 0;
-        text-decoration: underline;
+  progress {
+    &:indeterminate {
+      animation: progress-buffering 5s linear infinite; // stylelint-disable-line no-unknown-animations
     }
+  }
 
-    .hostname {
-        display: inline-block;
-        font-weight: normal;
-        margin-top: 4px;
-        margin-bottom: 4px;
-        cursor: pointer;
-        transition: background-color 0.65s @cubic-bezier;
-
-        &:active {
-            background-color: @background-color-selected;
-        }
-    }
-
-    progress {
-        &:indeterminate {
-            animation: progress-buffering 5s linear infinite; // stylelint-disable-line no-unknown-animations
-        }
-    }
-
-    .atomforce-ui-progressbar {
-        width: 220px;
-        margin-top: 8px;
-    }
+  .atomforce-ui-progressbar {
+    width: 220px;
+    margin-top: 8px;
+  }
 }
 
 .atomforce-tab {
-    cursor: default;
-    user-select: none;
+  cursor: default;
+  user-select: none;
+
+  &-empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .atomforce-dwdav-empty {
+      text-align: center;
+      user-select: none;
+      cursor: default;
+      padding: @component-padding;
+    }
+  }
+
+  &-components {
+    position: relative;
+    display: flex;
+    height: 100%;
+
+    &:not(.loading) {
+      flex-direction: column;
+    }
+
+    &.loading {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &-header {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    font-weight: 600;
+    min-height: 2.5em;
+    border-bottom: 1px solid @base-border-color;
+    padding: 0 0 0 @component-padding;
+
+    .icon {
+      &-database {
+        &::before {
+          margin-right: 8px;
+        }
+      }
+
+      &::before {
+        vertical-align: middle;
+        color: @text-color-subtle;
+      }
+    }
+
+    .hostname {
+      flex: 1;
+      line-height: 2.5em;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      margin-right: 10px;
+      overflow: hidden;
+    }
+
+    .button-list {
+      &-count {
+        &::before {
+          width: auto;
+        }
+      }
+
+      &-count,
+      &-clear {
+        height: 2.5em;
+        border: none;
+        border-left: 1px solid @base-border-color;
+        font-weight: normal;
+        white-space: nowrap;
+        background: none;
+        padding: 0 @component-padding;
+        cursor: default;
+
+        &::before {
+          font-size: 1em;
+          text-align: left;
+          margin-right: 0;
+        }
+
+        &:active {
+          background-color: @button-background-color-hover;
+        }
+      }
+    }
+  }
+
+  &-files-view {
+    overflow-y: auto;
 
     &-empty {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .atomforce-dwdav-empty {
-            text-align: center;
-            user-select: none;
-            cursor: default;
-            padding: @component-padding;
-        }
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
     }
 
-    &-components {
-        position: relative;
-        display: flex;
-        height: 100%;
-
-        &:not(.loading) {
-            flex-direction: column;
+    &.show-files-size {
+      .dwdav-pathame-item {
+        &[data-file-size] {
+          &::before {
+            content: attr(data-file-size);
+            color: @text-color-subtle;
+            position: absolute;
+            left: 10px;
+            font-size: 10px;
+            font-style: italic;
+          }
         }
-
-        &.loading {
-            justify-content: center;
-            align-items: center;
-        }
-    }
-
-    &-header {
-        display: flex;
-        align-items: center;
-        flex: 0 0 auto;
-        font-weight: 600;
-        min-height: 2.5em;
-        border-bottom: 1px solid @base-border-color;
-        padding: 0 0 0 @component-padding;
 
         .icon {
-            &-database {
-                &::before {
-                    margin-right: 8px;
-                }
-            }
-
-            &::before {
-                vertical-align: middle;
-                color: @text-color-subtle;
-            }
+          margin-left: 32px;
         }
+      }
+    }
+  }
 
-        .hostname {
-            flex: 1;
-            line-height: 2.5em;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            margin-right: 10px;
-            overflow: hidden;
-        }
+  .dwdav-pathame {
+    &-items {
+      padding-left: 25px;
+      overflow: hidden;
 
-        .button-list {
-            &-count {
-                &::before {
-                    width: auto;
-                }
-            }
-
-            &-count,
-            &-clear {
-                height: 2.5em;
-                border: none;
-                border-left: 1px solid @base-border-color;
-                font-weight: normal;
-                white-space: nowrap;
-                background: none;
-                padding: 0 @component-padding;
-                cursor: default;
-
-                &::before {
-                    font-size: 1em;
-                    text-align: left;
-                    margin-right: 0;
-                }
-
-                &:active {
-                    background-color: @button-background-color-hover;
-                }
-            }
-        }
+      &-empty {
+        text-align: center;
+        color: @text-color-subtle;
+        padding: (@component-padding / 2) @component-padding;
+      }
     }
 
-    &-files-view {
-        overflow-y: auto;
+    &-item {
+      display: flex;
+      align-items: flex-start;
+      padding: (@component-padding / 2) @component-padding;
 
-        &-empty {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
+      .icon {
+        &::before {
+          margin-right: 8px;
         }
+      }
 
-        &.show-files-size {
-            .dwdav-pathame-item {
-                &[data-file-size] {
-                    &::before {
-                        content: attr(data-file-size);
-                        color: @text-color-subtle;
-                        position: absolute;
-                        left: 10px;
-                        font-size: 10px;
-                        font-style: italic;
-                    }
-                }
+      .pathame {
+        flex: 1;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding-right: 16px;
+      }
+    }
+  }
 
-                .icon {
-                    margin-left: 32px;
-                }
-            }
-        }
+  &-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex: 0 0 auto;
+    font-size: @font-size;
+    border-top: 1px solid @base-border-color;
+    margin-top: auto;
+
+    .icon {
+      &::before {
+        vertical-align: middle;
+        color: @text-color-subtle;
+        margin-right: 8px;
+      }
     }
 
-    .dwdav-pathame {
-        &-items {
-            padding-left: 25px;
-            overflow: hidden;
-
-            &-empty {
-                text-align: center;
-                color: @text-color-subtle;
-                padding: (@component-padding / 2) @component-padding;
-            }
-        }
-
-        &-item {
-            display: flex;
-            align-items: flex-start;
-            padding: (@component-padding / 2) @component-padding;
-
-            .icon {
-                &::before {
-                    margin-right: 8px;
-                }
-            }
-
-            .pathame {
-                flex: 1;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                padding-right: 16px;
-            }
-        }
+    .label {
+      font-weight: 600;
     }
 
-    &-footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        flex: 0 0 auto;
-        font-size: @font-size;
-        border-top: 1px solid @base-border-color;
-        margin-top: auto;
-
-        .icon {
-            &::before {
-                vertical-align: middle;
-                color: @text-color-subtle;
-                margin-right: 8px;
-            }
-        }
-
-        .label {
-            font-weight: 600;
-        }
-
-        .label,
-        .value {
-            display: block;
-        }
-
-        .value {
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            margin-left: 4px;
-        }
-
-        .tab-footer-row {
-            display: flex;
-            align-items: center;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            padding: 16px @component-padding;
-
-            &:last-of-type {
-                justify-content: flex-end;
-            }
-        }
+    .label,
+    .value {
+      display: block;
     }
+
+    .value {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      margin-left: 4px;
+    }
+
+    .tab-footer-row {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      padding: 16px @component-padding;
+
+      &:last-of-type {
+        justify-content: flex-end;
+      }
+    }
+  }
 }
