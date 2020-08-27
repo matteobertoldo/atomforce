@@ -9,7 +9,7 @@
             alt="Build Status"
         />
     </a>
-    <a href="https://spectrum.chat/atomforce">
+    <a href="https://spectrum.chat/atomforce/general?tab=posts">
         <img
             src="https://withspectrum.github.io/badge/badge.svg"
             alt="Join the community on Spectrum"
