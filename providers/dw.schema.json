@@ -3,7 +3,7 @@
   "type": "object",
   "description": "Salesforce Commerce Cloud Sandbox configuration file.",
   "additionalProperties": true,
-  "required": ["hostname", "username", "password", "version"],
+  "required": ["hostname", "username", "password", "code-version", "version"],
   "properties": {
     "hostname": {
       "type": "string",
@@ -31,7 +31,7 @@
     },
     "version": {
       "type": "string",
-      "description": "Alias of the <version> property.",
+      "description": "Alias of the <code-version> property.",
       "default": "1.0.0",
       "examples": ["1.0.0"]
     },
