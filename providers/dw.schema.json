@@ -23,6 +23,18 @@
       "default": "*****",
       "examples": ["*****"]
     },
+    "client-id": {
+      "type": "string",
+      "description": "Commerce Cloud \"client-id\" (Consumer Key) for OAuth 2.0",
+      "default": "*****",
+      "examples": ["*****"]
+    },
+    "client-secret": {
+      "type": "string",
+      "description": "Commerce Cloud \"client-secret\" (Consumer Secret) for OAuth 2.0",
+      "default": "*****",
+      "examples": ["*****"]
+    },
     "code-version": {
       "type": "string",
       "description": "The version of the code active in your Sandbox. You can check the version in Administration > Site Development > Code Deployment.",
