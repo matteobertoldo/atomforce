@@ -43,7 +43,7 @@
     },
     "version": {
       "type": "string",
-      "description": "Alias of the <code-version> property.",
+      "description": "Alias of the \"code-version\" property.",
       "default": "1.0.0",
       "examples": ["1.0.0"]
     },
