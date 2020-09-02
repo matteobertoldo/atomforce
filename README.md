@@ -1,8 +1,6 @@
 <h3 align="center">:cloud: Atomforce</h3>
 
-<p align="center">
-    Unofficial <i>Salesforce &trade; Commerce Cloud</i> uploader &amp; manager for Atom.
-</p>
+<p align="center">Unofficial <i>Salesforce &trade; Commerce Cloud</i> uploader &amp; manager for Atom.</p>
 
 <p align="center">
     <a href="https://travis-ci.com/matteobertoldo/atomforce">
@@ -11,7 +9,7 @@
             alt="Build Status"
         />
     </a>
-    <a href="https://spectrum.chat/atomforce">
+    <a href="https://spectrum.chat/atomforce/general?tab=posts">
         <img
             src="https://withspectrum.github.io/badge/badge.svg"
             alt="Join the community on Spectrum"
@@ -33,7 +31,7 @@
 
 ---
 
-## About
+## Intro
 
 Atomforce is a package for [Atom](https://atom.io), that with a simple interface in the Status Bar, helps you upload files and cartridges in your Sandbox. Upload your files and cartridges on _SFCC_ via WebDAV.
 
@@ -74,7 +72,7 @@ However, it's possible to consult the attributes of the properties and the _mand
 | `hostname`                  |  `true`   |      `string`       | The Hostname of your sandbox without the `https` protocol. The name must end before `/on/demandware.store/`.                                                                                                                                                                      |
 | `username`                  |  `true`   |      `string`       | The username used to access on your Sandbox. The same value of the field that in "Sandbox Istance" is called `login`. In some sandboxes with the _SFRA_ architecture the username, corresponds to the username used in [`account.demandware.com`](https://account.demandware.com) |
 | `password`                  |  `true`   |      `string`       | The password used to access on your Sandbox. In some sandboxes with the _SFRA_ architecture the password, corresponds to the password used in [`account.demandware.com`](https://account.demandware.com)                                                                          |
-| `version` or `code-version` |  `true`   |      `string`       | The version of the code active in your Sandbox. You can check the version in `Administration > Site Development > Code Deployment`.                                                                                                                                               |
+| `code-version` or `version` |  `true`   |      `string`       | The version of the code active in your Sandbox. You can check the version in `Administration > Site Development > Code Deployment`.                                                                                                                                               |
 | `root`                      |  `false`  |      `string`       | Root option allows for path resolution of the file to upload _relative_ to a directory.                                                                                                                                                                                           |
 | `cartridges`                |  `false`  | `string` or `array` | List of cartridges to be uploaded and viewed by the watcher filesystem.                                                                                                                                                                                                           |
 | `p12`                       |  `false`  |      `string`       | The absolute path of `p12` file necessary for two-factor authentication. If `hostname` key contains `cert` initials, this key become **mandatory**.                                                                                                                               |
@@ -89,7 +87,7 @@ A final example of how the file should be structured. <br />
     "hostname": "dev01-eu01-sample.demandware.net",
     "username": "username",
     "password": "mypassword",
-    "version": "version1"
+    "code-version": "version1"
 }
 ```
 
@@ -102,7 +100,7 @@ Atomforce supports **2FA** (Two-factor Authentication). <br /> The `p12` key can
     "hostname": "cert.staging.eu01.sample.demandware.net",
     "username": "username",
     "password": "mypassword",
-    "version": "version1",
+    "code-version": "version1",
     "p12": "absolutepath/to/certificate.p12",
     "passphrase": "keyword"
 }
@@ -127,7 +125,7 @@ In this structure in the WebDAV the `cartridges` folder will also be uploaded, t
     "hostname": "dev01-eu01-sample.demandware.net",
     "username": "username",
     "password": "mypassword",
-    "version": "version1",
+    "code-version": "version1",
     "root": "cartridges"
 }
 ```
@@ -143,7 +141,7 @@ The `cartridges` option allows you to stay in watch on one or more cartridges an
     "hostname": "dev01-eu01-sample.demandware.net",
     "username": "username",
     "password": "mypassword",
-    "version": "version1",
+    "code-version": "version1",
     "root": "cartridges",
     "cartridges": ["app_storefront_base", "plugin_ups"]
 }

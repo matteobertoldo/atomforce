@@ -3,7 +3,7 @@
   "type": "object",
   "description": "Salesforce Commerce Cloud Sandbox configuration file.",
   "additionalProperties": true,
-  "required": ["hostname", "username", "password", "version"],
+  "required": ["hostname", "username", "password", "code-version", "version"],
   "properties": {
     "hostname": {
       "type": "string",
@@ -23,15 +23,27 @@
       "default": "*****",
       "examples": ["*****"]
     },
-    "version": {
+    "client-id": {
+      "type": "string",
+      "description": "Commerce Cloud \"client-id\" (Consumer Key) for OAuth 2.0",
+      "default": "*****",
+      "examples": ["*****"]
+    },
+    "client-secret": {
+      "type": "string",
+      "description": "Commerce Cloud \"client-secret\" (Consumer Secret) for OAuth 2.0",
+      "default": "*****",
+      "examples": ["*****"]
+    },
+    "code-version": {
       "type": "string",
       "description": "The version of the code active in your Sandbox. You can check the version in Administration > Site Development > Code Deployment.",
       "default": "1.0.0",
       "examples": ["1.0.0"]
     },
-    "code-version": {
+    "version": {
       "type": "string",
-      "description": "Alias of the <version> property.",
+      "description": "Alias of the \"code-version\" property.",
       "default": "1.0.0",
       "examples": ["1.0.0"]
     },

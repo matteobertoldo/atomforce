@@ -1,12 +1,12 @@
 language: node_js
-node_js: '10.13.0'
+node_js: '14.1.0'
 os: linux
 
 env:
   matrix:
     - ATOM_CHANNEL=stable
     - ATOM_CHANNEL=beta
-    - ATOM_CHANNEL=dev
+    # - ATOM_CHANNEL=dev
 
 addons:
   apt:
@@ -17,6 +17,7 @@ addons:
       - libsecret-1-dev
 
 before_script:
+  - nvm use
   - npm install
   - npm run parse
 

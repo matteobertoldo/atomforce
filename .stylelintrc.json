@@ -9,7 +9,7 @@
   "plugins": ["stylelint-declaration-use-variable"],
   "rules": {
     "comment-no-empty": true,
-    "indentation": 4,
+    "indentation": 2,
     "no-descending-specificity": null,
     "no-unknown-animations": true,
     "property-no-vendor-prefix": true,
