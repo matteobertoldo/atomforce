@@ -1,12 +1,30 @@
 # Changelog
 
+**Implemented enhancements:**
+
+- Open B2C Commerce Infocenter on commands menu [\#44](https://github.com/matteobertoldo/atomforce/issues/44)
+
+## [v0.12.0](https://github.com/matteobertoldo/atomforce/tree/v0.12.0) (2020-09-02)
+
+[Full Changelog](https://github.com/matteobertoldo/atomforce/compare/v0.11.1...v0.12.0)
+
+**Implemented enhancements:**
+
+- Feature/matteobertoldo/refactor [\#45](https://github.com/matteobertoldo/atomforce/pull/45) ([matteobertoldo](https://github.com/matteobertoldo))
+
 ## [v0.11.1](https://github.com/matteobertoldo/atomforce/tree/v0.11.1) (2020-04-29)
 
 [Full Changelog](https://github.com/matteobertoldo/atomforce/compare/v0.11.0...v0.11.1)
 
 **Fixed bugs:**
 
+- FS watcher "undefined" root property [\#40](https://github.com/matteobertoldo/atomforce/issues/40)
+- FS watcher "undefined" root properties [\#42](https://github.com/matteobertoldo/atomforce/pull/42) ([matteobertoldo](https://github.com/matteobertoldo))
 - FS watcher "undefined" root properties [\#41](https://github.com/matteobertoldo/atomforce/pull/41) ([matteobertoldo](https://github.com/matteobertoldo))
+
+**Merged pull requests:**
+
+- FS watcher "undefined" root properties [\#43](https://github.com/matteobertoldo/atomforce/pull/43) ([matteobertoldo](https://github.com/matteobertoldo))
 
 ## [v0.11.0](https://github.com/matteobertoldo/atomforce/tree/v0.11.0) (2020-04-28)
 
