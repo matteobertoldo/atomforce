@@ -13,7 +13,7 @@
   ],
   "author": {
     "name": "Matteo Bertoldo",
-    "email": "mbertoldo@walit.it",
+    "email": "mrbert93@gmail.com",
     "url": "https://github.com/matteobertoldo"
   },
   "bugs": {
@@ -55,7 +55,6 @@
     "filesize": "^6.1.0",
     "multimatch": "^4.0.0",
     "request": "^2.88.2",
-    "sfcc-ci": "^2.6.0",
     "walk": "^2.3.14",
     "yazl": "^2.5.1"
   },

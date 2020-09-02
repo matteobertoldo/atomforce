@@ -1,6 +1,15 @@
 {
   "menu": [
     {
+      "label": "View",
+      "submenu": [
+        {
+          "label": "Toggle Atomfoce Tab",
+          "command": "atomforce:toggletab"
+        }
+      ]
+    },
+    {
       "label": "Packages",
       "submenu": [
         {
@@ -25,6 +34,10 @@
             {
               "label": "Upload All Cartridges",
               "command": "atomforce:cartridges"
+            },
+            {
+              "label": "Open B2C Commerce Infocenter",
+              "command": "atomforce:documentation"
             }
           ]
         }
