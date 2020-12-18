@@ -161,6 +161,7 @@
     color: @text-color-subtle;
     margin: 0 auto;
     cursor: default;
+    word-break: break-all;
 
     &.fit-content {
       max-width: 285px;
@@ -254,7 +255,6 @@
       }
 
       &::before {
-        vertical-align: middle;
         color: @text-color-subtle;
       }
     }
@@ -364,7 +364,7 @@
 
   &-footer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     flex: 0 0 auto;
     font-size: @font-size;
     border-top: 1px solid @base-border-color;
@@ -372,7 +372,6 @@
 
     .icon {
       &::before {
-        vertical-align: middle;
         color: @text-color-subtle;
         margin-right: 8px;
       }
@@ -397,13 +396,14 @@
     .tab-footer-row {
       display: flex;
       align-items: center;
+      justify-content: center;
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
       padding: 16px @component-padding;
 
-      &:last-of-type {
-        justify-content: flex-end;
+      &:first-of-type {
+        border-right: 1px solid @base-border-color;
       }
     }
   }
