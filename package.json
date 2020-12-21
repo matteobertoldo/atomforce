@@ -97,13 +97,11 @@
     "test": "atom --test spec"
   },
   "package-deps": [
-    [
-      {
-        "name": "autocomplete-json"
-      },
-      {
-        "name": "language-sfcc"
-      }
-    ]
+    {
+      "name": "language-sfcc"
+    },
+    {
+      "name": "autocomplete-json"
+    }
   ]
 }
