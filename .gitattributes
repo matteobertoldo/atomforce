@@ -8,6 +8,7 @@
 .nvmrc export-ignore
 .prettierignore export-ignore
 .prettierrc export-ignore
+.remarkignore export-ignore
 .remarkrc export-ignore
 .stylelintrc.json export-ignore
 .travis.yml export-ignore

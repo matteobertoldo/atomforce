@@ -161,7 +161,6 @@
     color: @text-color-subtle;
     margin: 0 auto;
     cursor: default;
-    word-break: break-all;
 
     &.fit-content {
       max-width: 285px;
@@ -182,21 +181,29 @@
   }
 
   .hostname {
-    display: inline-block;
-    font-weight: normal;
+    display: flex;
+    justify-content: center;
     margin-top: 4px;
     margin-bottom: 4px;
-    cursor: pointer;
-    transition: background-color 0.65s @cubic-bezier;
 
-    &:active {
-      background-color: @background-color-selected;
+    .name {
+      display: block;
+      font-weight: normal;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      cursor: pointer;
+      transition: background-color 0.65s @cubic-bezier;
+
+      &:active {
+        background-color: @background-color-selected;
+      }
     }
   }
 
   progress {
     &:indeterminate {
-      animation: progress-buffering 5s linear infinite; // stylelint-disable-line no-unknown-animations
+      animation: progress-buffering 5s linear infinite; // stylelint-disable-line
     }
   }
 
