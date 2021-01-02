@@ -1,4 +1,10 @@
-<h3 align="center">:cloud: Atomforce</h3>
+<p align="center">
+    <img
+        width="320px"
+        src="https://raw.githubusercontent.com/matteobertoldo/atomforce/assets/logos/atomforce.svg?sanitize=true"
+        alt="Atomforce"
+    />
+</p>
 
 <p align="center">Unofficial <i>Salesforce &trade; Commerce Cloud</i> uploader &amp; manager for Atom.</p>
 
@@ -30,10 +36,6 @@
 </p>
 
 ---
-
-## Intro
-
-Atomforce is a package for [Atom](https://atom.io), that with a simple interface in the Status Bar, helps you upload files and cartridges in your Sandbox. Upload your files and cartridges on _SFCC_ via WebDAV.
 
 ## Installation
 
@@ -151,7 +153,7 @@ The cartridges option can also be referred to as a string. Ex: `"cartridges": "a
 
 ### Cartridges Definition
 
-By default, if the value of the `cartridges` key is passed as `String` all the content (files and folders) of the path passed as a value will be uploaded to the WebDAV, without however creating the path starting from the defined string.
+By default, if the value of the `cartridges` key is passed as `String` all the content (files and folders) of the path passed as a value will be uploaded to the WebDAV, **without** however creating the path starting from the defined string.
 
 If you want to upload the entire path defined in the `cartridges` key, just pass the value as an `Array`.
 
@@ -159,7 +161,7 @@ If you want to upload the entire path defined in the `cartridges` key, just pass
 
 To improve the development workflow in Salesforce Commerce Cloud we recommend installing the `.isml` &amp; `.ds` syntax, snippets and autocompletion package.
 
--   [language-sfcc](https://atom.io/packages/language-sfcc)
+-   [language-sfcc](https://github.com/matteobertoldo/language-sfcc)
 
 <img
     width="160px"
@@ -167,7 +169,9 @@ To improve the development workflow in Salesforce Commerce Cloud we recommend in
     alt="Atom SFCC"
 />
 
-## Contributing [![Known Vulnerabilities](https://snyk.io/test/github/matteobertoldo/atomforce/badge.svg?targetFile=package.json)](https://snyk.io/test/github/matteobertoldo/atomforce?targetFile=package.json)
+## Contributing
+
+[![Known Vulnerabilities](https://snyk.io/test/github/matteobertoldo/atomforce/badge.svg?targetFile=package.json)](https://snyk.io/test/github/matteobertoldo/atomforce?targetFile=package.json)
 
 ### Prerequisites
 

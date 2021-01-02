@@ -1,7 +1,7 @@
 {
   "name": "atomforce",
   "main": "./lib/atomforce",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "description": "Unofficial Salesforce™ Commerce Cloud uploader & manager for Atom. Upload your files and cartridges on SFCC via WebDAV.",
   "keywords": [
     "salesforce-commerce-cloud",
@@ -25,32 +25,32 @@
     "atom": ">=1.21.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^9.1.2",
-    "@commitlint/config-conventional": "^9.1.2",
-    "eslint": "^7.7.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.22.0",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "eslint": "^7.17.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-prettier": "^3.3.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.20.6",
-    "eslint-plugin-standard": "^4.0.1",
-    "husky": "^3.1.0",
-    "lint-staged": "^10.2.13",
-    "prettier": "^2.1.1",
-    "remark-cli": "^8.0.1",
+    "eslint-plugin-react": "^7.22.0",
+    "husky": "^4.3.6",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1",
+    "remark-cli": "^9.0.0",
     "remark-lint-no-dead-urls": "^1.1.0",
-    "remark-preset-lint-recommended": "^4.0.1",
-    "stylelint": "^13.6.1",
+    "remark-preset-lint-recommended": "^5.0.0",
+    "standard-version": "^9.1.0",
+    "stylelint": "^13.8.0",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-declaration-use-variable": "^1.7.2"
   },
   "dependencies": {
-    "atom-package-deps": "^6.0.0",
-    "chokidar": "^3.4.2",
-    "del": "^5.1.0",
-    "etch": "^0.14.0",
+    "atom-package-deps": "^7.0.3",
+    "chokidar": "^3.4.3",
+    "del": "^6.0.0",
+    "etch": "^0.14.1",
     "file-url": "^3.0.0",
     "filesize": "^6.1.0",
     "multimatch": "^4.0.0",
@@ -79,13 +79,12 @@
     }
   },
   "lint-staged": {
+    "*.{less,md,js,json,yml}": "prettier --write",
     "*.js": "eslint --fix",
     "*.less": "stylelint --fix",
-    "*.md": "remark .",
-    "*.{json,yml}": "prettier --write"
+    "*.md": "remark --silently-ignore"
   },
   "scripts": {
-    "changelog": "github_changelog_generator -u matteobertoldo -p atomforce",
     "format": "prettier --config .prettierrc --write \"./**/*.{less,md,js,json,yml}\"",
     "lint": "npm run lint:js && npm run lint:less && npm run lint:markdown",
     "lint:fix": "npm run lint:js:fix && npm run lint:less:fix",
@@ -95,10 +94,15 @@
     "lint:less:fix": "stylelint ./styles --fix",
     "lint:markdown": "remark .",
     "parse": "npm run format && npm run lint",
+    "release": "standard-version",
     "test": "atom --test spec"
   },
   "package-deps": [
-    "autocomplete-json",
-    "language-sfcc"
+    {
+      "name": "language-sfcc"
+    },
+    {
+      "name": "autocomplete-json"
+    }
   ]
 }

@@ -181,21 +181,29 @@
   }
 
   .hostname {
-    display: inline-block;
-    font-weight: normal;
+    display: flex;
+    justify-content: center;
     margin-top: 4px;
     margin-bottom: 4px;
-    cursor: pointer;
-    transition: background-color 0.65s @cubic-bezier;
 
-    &:active {
-      background-color: @background-color-selected;
+    .name {
+      display: block;
+      font-weight: normal;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      cursor: pointer;
+      transition: background-color 0.65s @cubic-bezier;
+
+      &:active {
+        background-color: @background-color-selected;
+      }
     }
   }
 
   progress {
     &:indeterminate {
-      animation: progress-buffering 5s linear infinite; // stylelint-disable-line no-unknown-animations
+      animation: progress-buffering 5s linear infinite; // stylelint-disable-line
     }
   }
 
@@ -254,7 +262,6 @@
       }
 
       &::before {
-        vertical-align: middle;
         color: @text-color-subtle;
       }
     }
@@ -364,7 +371,7 @@
 
   &-footer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     flex: 0 0 auto;
     font-size: @font-size;
     border-top: 1px solid @base-border-color;
@@ -372,7 +379,6 @@
 
     .icon {
       &::before {
-        vertical-align: middle;
         color: @text-color-subtle;
         margin-right: 8px;
       }
@@ -397,13 +403,14 @@
     .tab-footer-row {
       display: flex;
       align-items: center;
+      justify-content: center;
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
       padding: 16px @component-padding;
 
-      &:last-of-type {
-        justify-content: flex-end;
+      &:first-of-type {
+        border-right: 1px solid @base-border-color;
       }
     }
   }
