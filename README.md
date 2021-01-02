@@ -169,7 +169,9 @@ To improve the development workflow in Salesforce Commerce Cloud we recommend in
     alt="Atom SFCC"
 />
 
-## Contributing [![Known Vulnerabilities](https://snyk.io/test/github/matteobertoldo/atomforce/badge.svg?targetFile=package.json)](https://snyk.io/test/github/matteobertoldo/atomforce?targetFile=package.json)
+## Contributing
+
+[![Known Vulnerabilities](https://snyk.io/test/github/matteobertoldo/atomforce/badge.svg?targetFile=package.json)](https://snyk.io/test/github/matteobertoldo/atomforce?targetFile=package.json)
 
 ### Prerequisites
 
