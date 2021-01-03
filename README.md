@@ -37,6 +37,10 @@
 
 ---
 
+## Intro
+
+Atomforce is a package for [Atom](https://atom.io), that with a simple interface in the Atom Status Bar, helps you upload files and cartridges in your Sandbox via `WebDAV`.
+
 ## Installation
 
 ### Command Line
