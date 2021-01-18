@@ -2,8 +2,8 @@
 name: Bug report
 about: Create a report to help us to improve Atomforce.
 title: ''
-labels: ''
-assignees: ''
+labels: bug
+assignees: matteobertoldo
 ---
 
 **Describe the bug**
