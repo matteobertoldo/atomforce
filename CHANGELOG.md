@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.12.3](https://github.com/matteobertoldo/atomforce/compare/v0.12.2...v0.12.3) (2021-02-10)
+
+
+### Bug Fixes
+
+* [#36](https://github.com/matteobertoldo/atomforce/issues/36) unexpected change of the "code-version" ([5dab5de](https://github.com/matteobertoldo/atomforce/commit/5dab5de31e2f94e3acd47f3c5e3d426396a2f1a1))
+
 ### [0.12.2](https://github.com/matteobertoldo/atomforce/compare/v0.12.1...v0.12.2) (2021-01-18)
 
 
