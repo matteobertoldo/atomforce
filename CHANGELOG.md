@@ -8,3 +8,15 @@ All notable changes to this project will be documented in this file. See [standa
 ### Bug Fixes
 
 * vulnerability issues & small UI components ([1fdba70](https://github.com/matteobertoldo/atomforce/commit/1fdba70c2d0fea9ebdd51c22d9e830af7ef8b89d))
+
+### [0.12.1](https://github.com/matteobertoldo/atomforce/compare/v0.12.0...v0.12.1) (2021-01-03)
+
+
+### Features
+
+* **tab:** [#47](https://github.com/matteobertoldo/atomforce/issues/47) add new config for show file size on tab ([d26a58c](https://github.com/matteobertoldo/atomforce/commit/d26a58cdca38ca402c62a15edc448442430632b2))
+* **tab:** [#47](https://github.com/matteobertoldo/atomforce/issues/47) add new config for show file size on tab ([698f0c8](https://github.com/matteobertoldo/atomforce/commit/698f0c8735380b2300d456daf3bf901a3a601100))
+* **tab:** [#47](https://github.com/matteobertoldo/atomforce/issues/47) add new config for show file size on tab ([3df2e60](https://github.com/matteobertoldo/atomforce/commit/3df2e607e63a33d03ca4cdeea3442042563ab0c7))
+* **tab:** [#47](https://github.com/matteobertoldo/atomforce/issues/47) add new config for show file size on tab ([a26a7ba](https://github.com/matteobertoldo/atomforce/commit/a26a7ba32c430a19e6c3802b3ef03d5247dfa8ce))
+* **tab:** [#47](https://github.com/matteobertoldo/atomforce/issues/47) add new config for show file size on tab ([7da247f](https://github.com/matteobertoldo/atomforce/commit/7da247f1f38ff6d0f60e2b6a2f27184dd7bb6f6a))
+* **tab:** [#47](https://github.com/matteobertoldo/atomforce/issues/47) add new config for show file size on tab ([1926b5f](https://github.com/matteobertoldo/atomforce/commit/1926b5f9272dbfc49b22ac89395f4b8b92a01da2))
