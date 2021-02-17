@@ -1,7 +1,7 @@
 {
   "name": "atomforce",
   "main": "./lib/atomforce",
-  "version": "0.12.3",
+  "version": "0.12.4",
   "description": "Unofficial Salesforce™ Commerce Cloud uploader & manager for Atom. Upload your files and cartridges on SFCC via WebDAV.",
   "keywords": [
     "salesforce-commerce-cloud",
