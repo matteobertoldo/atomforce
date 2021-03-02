@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.12.5](https://github.com/matteobertoldo/atomforce/compare/v0.12.4...v0.12.5) (2021-03-02)
+
+
+### Bug Fixes
+
+* **dwjson:** fixed the warning for the non-mandatory “cartridges” key ([830669f](https://github.com/matteobertoldo/atomforce/commit/830669f69cc8480785a316d5014091d30eff7b67))
+
 ### [0.12.4](https://github.com/matteobertoldo/atomforce/compare/v0.12.3...v0.12.4) (2021-02-17)
 
 
