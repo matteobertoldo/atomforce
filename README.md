@@ -15,12 +15,6 @@
             alt="Build Status"
         />
     </a>
-    <a href="https://spectrum.chat/atomforce/general?tab=posts">
-        <img
-            src="https://withspectrum.github.io/badge/badge.svg"
-            alt="Join the community on Spectrum"
-        />
-    </a>
     <a href="https://github.com/prettier/prettier">
         <img
             src="https://img.shields.io/badge/code_of-conduct-ff69b4.svg"
