@@ -9,7 +9,7 @@
 <p align="center">Unofficial <i>Salesforce &trade; Commerce Cloud</i> B2C uploader &amp; manager for Atom.</p>
 
 <p align="center">
-    <a href="https://travis-ci.com/matteobertoldo/atomforce">
+    <a href="https://app.travis-ci.com/github/matteobertoldo/atomforce">
         <img
             src="https://travis-ci.com/matteobertoldo/atomforce.svg?branch=master"
             alt="Build Status"
