@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.12.7](https://github.com/matteobertoldo/atomforce/compare/v0.12.5...v0.12.7) (2022-04-28)
+
+
+### Bug Fixes
+
+* fixed a bug for creating zip files if they contained a path that included dots ([b5dc51d](https://github.com/matteobertoldo/atomforce/commit/b5dc51d285b6f8ceb3286d6e5326969e0a248462))
+* fixed a bug for creating zip files if they contained a path that included dots ([0d3fb51](https://github.com/matteobertoldo/atomforce/commit/0d3fb5170d94b01bb0ce083c0926583ebb8a6a8d))
+
 ### [0.12.5](https://github.com/matteobertoldo/atomforce/compare/v0.12.4...v0.12.5) (2021-03-02)
 
 
