@@ -1,7 +1,7 @@
 {
   "name": "atomforce",
   "main": "./lib/atomforce",
-  "version": "0.12.5",
+  "version": "0.12.6",
   "description": "Unofficial Salesforce™ Commerce Cloud uploader & manager for Atom. Upload your files and cartridges on SFCC via WebDAV.",
   "keywords": [
     "salesforce-commerce-cloud",
@@ -42,7 +42,7 @@
     "remark-lint-no-dead-urls": "^1.1.0",
     "remark-preset-lint-recommended": "^5.0.0",
     "standard-version": "^9.1.0",
-    "stylelint": "^13.10.0",
+    "stylelint": "^13.13.1",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-declaration-use-variable": "^1.7.2"
   },
@@ -52,7 +52,7 @@
     "del": "^6.0.0",
     "etch": "^0.14.1",
     "file-url": "^3.0.0",
-    "filesize": "^6.1.0",
+    "filesize": "^8.0.7",
     "multimatch": "^4.0.0",
     "request": "^2.88.2",
     "walk": "^2.3.14",
