@@ -30,7 +30,7 @@
   "settings": {
     "react": {
       "pragma": "etch",
-      "version": "latest"
+      "version": "detect"
     }
   }
 }
