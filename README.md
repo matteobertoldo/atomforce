@@ -132,6 +132,24 @@ In this structure in the WebDAV the `cartridges` folder will also be uploaded, t
 
 If the value of `root` is: `.` the full path will be considered, so the `cartridges` folder will also be uploaded in the WebDAV. If the path of your cartridges is on several levels: `cartridges/src` just indicate the complete path. Final slash is not required.
 
+Root option also supports [glob patterns](<https://en.wikipedia.org/wiki/Glob_(programming)>), If your project contains multiple top level folders:
+
+```
+sfcc-project
+| storefront-reference-architecture
+| | cartridges
+| | | app_storefront_base
+| | | bm_app_storefront_base
+|    ...
+| link_paypal
+| | cartridges
+| | | bm_paypal
+| | | bm_paypal_configuration
+      ...
+```
+
+you can use a wildcard to match a path pattern `**/cartridges` to pickup all cartridges.
+
 ### Cartridges List
 
 The `cartridges` option allows you to stay in watch on one or more cartridges and upload these accordingly in WebDAV. If this option is not defined in the `dw.json` file, the watcher filesystem will listen all event (add, change and delete) to all files and folders in the project root or path indicated in the `root` option, and all files and folders will be uploaded.
