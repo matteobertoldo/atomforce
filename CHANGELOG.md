@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.2](https://github.com/matteobertoldo/atomforce/compare/v0.12.5...v0.12.7) (2022-04-28)
+
+### Bug Fixes
+
+* added support for globs in root url
+
+
 ### [0.12.7](https://github.com/matteobertoldo/atomforce/compare/v0.12.5...v0.12.7) (2022-04-28)
 
 
